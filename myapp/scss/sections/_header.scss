@@ -1,0 +1,235 @@
+nav {
+    a {
+        color: #252525;
+        @media screen and (max-width: 749px){
+            color: #090f21;
+        }
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        width: 100%;
+    }
+}
+header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        padding-top: 4px;
+
+    }
+    @media screen and (max-height: 850px) and  (min-width: 1081px) {
+    }
+}
+.header {
+    &__location {
+        position: relative;
+        opacity: 0.95;
+        font-weight: 300;
+        letter-spacing: 0.16px;
+        color: #1b1b1b;
+        margin-left: 40px;
+        border-bottom: 1px dashed #1b1b1b;
+
+    
+    
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+
+        }
+        @media screen and (max-width: 749px){
+        }
+        @media screen and (max-height: 850px) and  (min-width: 1081px) {
+
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            top: 1px;
+            left: -25px;
+            background: url(../img/icons/point.svg) no-repeat;
+            background-size: 13px 22px;
+            width: 14px;
+            height: 20px;
+        }
+    }
+    &__phone {
+        font-size: 26px;
+        font-weight: 500;
+        text-align: right;
+        justify-content: flex-end;
+        margin-bottom: 12px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            padding-top: 10px;
+        }
+        @media screen and (max-height: 850px) and  (min-width: 1081px) {
+
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        font-family: "Gilroy", Arial, Helvetica, sans-serif;
+        line-height: 19.13px;
+        text-transform: uppercase;
+        letter-spacing: 0.92px;
+        text-align: center;
+        // box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.6);
+        transition-duration: all 0.2s;
+        padding: 35px 35px 35px 35px;
+        border-radius: 10px;
+        background: #c3c3c3;
+        color: #fff;
+        /* background: -webkit-gradient(linear, left top, right top, from(#c3c3c3), color-stop(51%, #a7a7a7), to(#969696)); */
+        // background: linear-gradient(90deg, #c3c3c3 0%, #a7a7a7 51%, #969696 100%);
+    }
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        margin-top: 14px;
+    }
+    @media screen and (max-width: 749px){
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+    img {
+        width: 225px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            width: 167px;
+        }
+        @media screen and (max-width: 749px){
+            // width: 178px;
+        }
+    	@media screen and (max-height: 850px) and  (min-width: 1081px) {
+            // width: 192px;
+        }
+    }
+    &__text {
+        max-width: 203px;
+        margin-top: 24px;
+        color: #7e7979;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-top: 10px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            margin-left: 20px;
+        }
+        @media screen and (max-width: 749px){
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.bold {
+    font-weight: 500;
+}
+.mob {
+    display: none;
+    @media only screen and (max-width:  749px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: 14px;
+        right: -4px;
+    }
+    &-phone {
+        @media only screen and (max-width:  749px){
+            display: flex;
+        }
+    }
+}
+
+.menu-wrap {
+    width: 56%;
+    padding-top: 18px;
+	@media only screen and (max-width: 1350px) and (orientation: portrait),
+	screen and (max-width: 1080px) {
+        width: 47%;
+    }
+}
+.menu-toggle {
+    display: none;
+}
+.cross {
+    display: none;
+}
+.main-menu {
+    font-size: 17px;
+    @media screen and (max-height: 850px) and  (min-width: 1081px) {
+        font-size: 14px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    a  {
+        display: flex;
+    }
+    .support {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @media screen and (max-width: 749px){
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        &__text {
+            font-weight: 700;
+            @media screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                display: none;
+            }
+            @media only screen and (max-width: 749px) {
+                display: block;
+            }
+        }
+        img {
+            width: 20px;
+            height: 25px;
+            margin-right: 10px;
+            @media screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                margin-left: 10px;
+            }
+        }
+        &__icon {
+            &--desctop {
+                @media only screen and (max-width: 749px) {
+                    display: none;
+                }
+            }
+            &--mob {
+                display: none;
+                @media only screen and (max-width: 749px) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+

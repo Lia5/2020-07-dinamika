@@ -1,0 +1,151 @@
+.home {
+    position: relative; 
+    margin-top: auto;
+    margin-bottom: auto;
+    // padding-top: 17px;
+    padding-top: 70px;
+    @media screen and (max-width: 1919px) {
+        overflow: hidden;
+    }
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        padding-bottom: 27px;
+        padding-top: 43px;
+        overflow: hidden;
+    }
+    @media screen and (max-width: 749px){
+        padding-top: 53px;
+        padding-bottom: 48px;
+    }
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            flex-wrap: wrap;
+        }
+        @media screen and (max-height: 850px) and  (min-width: 1081px) {
+            // padding-right: 11%;
+        }
+    }
+    &__pre {
+        background: #f5484e;
+        display: inline-block;
+        color: #ffffff;
+        font-family: "Roboto-cons";
+        font-size: 21px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 4px 16px 4px 23px;
+        border-radius: 8px;
+        letter-spacing: 1px;
+    }
+    &__body {
+        width: 50%;
+        padding-right: 20px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            width: 100%;
+            position: relative;
+        }
+        @media screen and (max-width: 749px){
+            padding-right: 0;
+        }
+        @media screen and (max-height: 850px) and  (min-width: 1081px) {
+
+        }
+    }
+    &__title {
+        font-size: 34px;
+        line-height: 41px;
+        color: #000;
+        font-weight: 300;
+        letter-spacing: 0.28px;
+        max-width: 548px;
+        // max-width: 600px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+
+        }
+        @media screen and (max-width: 749px){
+
+        }
+        @media screen and (max-height: 850px) and  (min-width: 1081px) {
+            // font-size: 41px;
+            // line-height: 48px;
+        }
+    }
+    &__subtitle {
+        max-width: 469px;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 32.77px;
+        margin-left: 28px;
+    }
+    
+    &__btn {
+        margin-left: 19px;
+        display: flex;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+
+        }
+        @media screen and (max-width: 749px){
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+        @media screen and (max-height: 850px) and  (min-width: 1081px) {
+
+        }
+    }
+    &__side {
+        width: 50%;
+    }
+    &__test {
+        max-width: 300px;
+        text-align: center;
+    }
+    &__bonus {
+        position: relative;
+        text-align: center;
+        max-width: 257px;
+        padding: 80px 64px;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            content: "";
+            top: -49px;
+            right: -33px;
+            background: url(../img/icons/figure-arrow.svg) 0 0/cover no-repeat;
+            width: 100px;
+            height: 90px;
+            z-index: 1;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../img/icons/hexagon.svg') no-repeat;
+            z-index: -1;
+        }
+    }
+}
+.pdf-icon {
+    display: block;
+    margin: 0 auto;
+}
+.agree {
+
+    max-width: 350px;
+    color: #cacaca;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 16.57px;
+    text-align: center;
+    margin: 35px 0 0px;
+    text-transform: none;
+}

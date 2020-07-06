@@ -1,0 +1,33 @@
+.lp2 {
+    .main {
+        background-image: url('../img/main-bg2.png');
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            background-image: url('../img/main-bg2-750.jpg');
+            
+        }
+
+        @media screen and (max-width: 749px){
+            background-image: url('../img/main-bg-320.jpg');
+            
+        }
+    }
+    .advantages__item3 {
+        transform: translate(112%, -28px);
+        @media screen and (max-width: 1290px) {
+            padding-right: 2%;
+        }
+        @media screen and (max-width: 1190px) {
+            transform: translate(130%,-28px);
+            padding-right: 0;
+        }
+
+    }
+    .advantages__work:after {
+        
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            content: none;
+        }
+    }
+}

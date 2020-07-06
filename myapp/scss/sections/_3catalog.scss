@@ -1,0 +1,48 @@
+.catalog {
+    position: relative;
+    padding: 100px 0;
+    border-top: 50px solid $accent;
+    border-bottom: 50px solid $accent;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        right: 0;
+        width: 60%;
+        height: 50px;
+        background: #000;
+        border-top-left-radius: 50px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 60%;
+        height: 50px;
+        background: #000;
+        border-bottom-right-radius: 50px;
+    }
+    &__item {
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    &__pic {
+        object-fit: cover;
+        img {
+            width: 100%;
+        }
+    }
+    &__body {
+        padding: 20px 10px;
+        p {
+            margin: 0;
+        }
+    }
+    &__position {
+        margin-bottom: 20px;
+    }
+}
