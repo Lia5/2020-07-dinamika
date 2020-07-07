@@ -401,27 +401,6 @@ $(function() {
         });
     }
 
-function outputUpdate(vol) {
-    var output = document.querySelector('#volume');
-    output.value = vol;
-    output.style.left = vol - 20;
-    if (output.value > 9) {
-       output.style.left = vol - 30;
-    }
-    if (output.value > 99) {
-       output.style.left = vol - 40;
-    }
-    if (output.value > 240) {
-       output.style.left = vol - 45;
-    }
-    if (output.value > 430) {
-       output.style.left = vol - 50;
-    }
-    if (output.value > 470) {
-       output.style.left = vol - 55;
-    }
- }
- 
 
 });
 

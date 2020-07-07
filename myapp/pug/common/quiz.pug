@@ -103,20 +103,7 @@ section#quiz.quiz
                         .quiz__ans.question__ans--radio
                             .slider
                                 output#volume(for='fader') 7
-                                input#fader(type='range', name='year', min='7', max='18', value='0', step='1', oninput='outputUpdate(value)')
-
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question2', value='До 15 соток')
-                                .pick-item__label До 15 соток
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question2', value='От 30 до 60 соток')
-                                .pick-item__label От 30 до 60 соток
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question2', value='До 15 до 30 соток')
-                                .pick-item__label До 15 до 30 соток
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question2', value='От 60 до 1 га')
-                                .pick-item__label От 60 до 1 га
+                                input#fader(type='range', name='question2', min='7', max='18', value='0', step='1', oninput='outputUpdate(value)')
                         .step-slide__bottom
                             .prev-next-container
                                 .quiz__error
@@ -124,54 +111,46 @@ section#quiz.quiz
                                     span Назад
                                 .si-button-pulse
                                     a.btn.btn-next.qa-next(href='#').blick Далее
-                                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 31.49 31.49', style='enable-background:new 0 0 31.49 31.49;', xml:space='preserve')
-                                            path(style='fill:#fff;', d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111\
-                                            C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587\
-                                            c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z')
             .step-slide.step-slide--with-img
                 .quiz__wrap
                     .quiz-sidebar
                         .quiz-sidebar__pic
                             .quiz-sidebar__img
-                                img(src="img/foto.jpg", alt="Иван Лымар")
-                                img(src="img/foto-mob.jpg", alt="Иван Лымар" class="quiz-sidebar__img--mob")
-                            .quiz-sidebar__name Иван Лымар
-                            .quiz-sidebar__position Генеральный директор
+                                img(src="img/women.png", alt="Лэйсан Фаусовна")
+                            .quiz-sidebar__name Лэйсан Фаусовна
+                            .quiz-sidebar__position Руководитель школы Динамика
                         .quiz-sidebar__wrap
                             .quiz-sidebar__text 
-                                p 
-                                    span.text--medium Наши специалисты имеют в своем распоряжении 
-                                    | необходимое оборудование и служебный транспорт. 
-                                p 
-                                    span.text--medium Мы выезжаем на объекты по 
-                                    | всей территории Московской области 7 дней в неделю
-                                    
-                            .quiz-sidebar__title.text--medium До выбора подарка осталось: 
-                            .quiz-sidebar__subtitle.text--medium 5 вопросов
+                                p Здравствуйте! Я являюсь руководителем онлайн-школы и помогу вам на всём протяжении теста.
+                                p
+                                    span.text--medium К кадому вопросу будут мои пояснения и комментарии,
+                                    br.br-desktop
+                                    | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
+                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .quiz-sidebar__title До выбора подарка осталось: 
+                            .quiz-sidebar__subtitle.text--medium 3 вопроса
                     .quiz__body
-                        .step-slide__title Где располагается участок?
+                        .step-slide__title Какой уровень владения английским на данный момент?
                         .step-slide__bottom
                             .quiz-progress
-                                .quiz-progress__title Готово: 
-                                    span 25%
                                 .quiz-progress__steps
                                     .quiz-progress__item.active(style="width:25%")
                         .quiz__ans.question__ans--radio
                             label.pick-item
+                                input.pick-item__input(type='radio', name='question3', value='Нужно учить с нуля')
                                 .label-img
-                                    img(src="img/q3-1.jpg", alt="quiz")
-                                input.pick-item__input(type='radio', name='question3', value='В пределах МКАД')
-                                .pick-item__label В пределах МКАД
+                                    img(src="img/quiz/5.png", alt="quiz")
+                                .pick-item__label Нужно учить с нуля
                             label.pick-item
+                                input.pick-item__input(type='radio', name='question3', value='Знает основные фразы, не более того')
                                 .label-img
-                                    img(src="img/q3-2.jpg", alt="quiz")
-                                input.pick-item__input(type='radio', name='question3', value='В Новой Москве')
-                                .pick-item__label В Новой Москве
+                                    img(src="img/quiz/6.png", alt="quiz")
+                                .pick-item__label Знает основные фразы, не более того
                             label.pick-item
+                                input.pick-item__input(type='radio', name='question3', value='Нужно подтянуть грамматику')
                                 .label-img
-                                    img(src="img/q3-3.jpg", alt="quiz")
-                                input.pick-item__input(type='radio', name='question3', value='В Московской области')
-                                .pick-item__label В Московской области
+                                    img(src="img/quiz/7.png", alt="quiz")
+                                .pick-item__label Нужно подтянуть грамматику
                         .step-slide__bottom
                             .prev-next-container
                                 .quiz__error
@@ -179,52 +158,40 @@ section#quiz.quiz
                                     span Назад
                                 .si-button-pulse
                                     a.btn.btn-next.qa-next(href='#').blick Далее
-                                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 31.49 31.49', style='enable-background:new 0 0 31.49 31.49;', xml:space='preserve')
-                                            path(style='fill:#fff;', d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111\
-                                            C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587\
-                                            c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z')
             .step-slide
                 .quiz__wrap
                     .quiz-sidebar
                         .quiz-sidebar__pic
                             .quiz-sidebar__img
-                                img(src="img/foto.jpg", alt="Иван Лымар")
-                                img(src="img/foto-mob.jpg", alt="Иван Лымар" class="quiz-sidebar__img--mob")
-                            .quiz-sidebar__name Иван Лымар
-                            .quiz-sidebar__position Генеральный директор
+                                img(src="img/women.png", alt="Лэйсан Фаусовна")
+                            .quiz-sidebar__name Лэйсан Фаусовна
+                            .quiz-sidebar__position Руководитель школы Динамика
                         .quiz-sidebar__wrap
                             .quiz-sidebar__text 
-                                p 
-                                    span.text--medium Второй важный фактор - 
-                                    | площадь участка. Градация стоимости у нас: до 30 соток, от 30 до 60 соток, от 60 соток и выше. 
-                                    span.text--medium Важно: 
-                                    | если у Вас 1га и больше, то стоимость будет скорее всего как для участка до 30 соток. Иногда поле в га проще снять чем участок в 10 соток со всеми строениями и коммуникациями.
-                            .quiz-sidebar__title.text--medium До выбора подарка осталось: 
-                            .quiz-sidebar__subtitle.text--medium 4 вопроса
+                                p Здравствуйте! Я являюсь руководителем онлайн-школы и помогу вам на всём протяжении теста.
+                                p
+                                    span.text--medium К кадому вопросу будут мои пояснения и комментарии,
+                                    br.br-desktop
+                                    | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
+                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .quiz-sidebar__title До выбора подарка осталось: 
+                            .quiz-sidebar__subtitle.text--medium 2 вопроса
                     .quiz__body.quiz__body4
-                        .step-slide__title Геодезические изыскания необходимы для:
+                        .step-slide__title Когда вашему ребенку удобно обучаться?
                         .step-slide__bottom
                             .quiz-progress
-                                .quiz-progress__title Готово: 
-                                    span 37.5%
                                 .quiz-progress__steps
                                     .quiz-progress__item.active(style="width:37.5%")
                         .quiz__ans.question__ans--radio
                             label.pick-item
-                                input.pick-item__input(type='radio', name='question4', value='Проектирования')
-                                .pick-item__label Проектирования
+                                input.pick-item__input(type='radio', name='question4', value='По будням в вечернее время')
+                                .pick-item__label По будням в вечернее время
                             label.pick-item
-                                input.pick-item__input(type='radio', name='question4', value='Получения ГПЗУ')
-                                .pick-item__label Получения ГПЗУ
+                                input.pick-item__input(type='radio', name='question4', value='Удобно каждый день')
+                                .pick-item__label Удобно каждый день
                             label.pick-item
-                                input.pick-item__input(type='radio', name='question4', value='Обновления  топосъемки')
-                                .pick-item__label Обновления  топосъемки
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question4', value='Затрудняюсь ответитить. Нужна консультация')
-                                .pick-item__label Затрудняюсь ответитить. <br> Нужна консультация
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question4', value='Получения разрешения на строительство')
-                                .pick-item__label Получения разрешения <br>на строительство
+                                input.pick-item__input(type='radio', name='question4', value='На выходных')
+                                .pick-item__label На выходных
                         .step-slide__bottom
                             .prev-next-container
                                 .quiz__error
@@ -232,55 +199,40 @@ section#quiz.quiz
                                     span Назад
                                 .si-button-pulse
                                     a.btn.btn-next.qa-next(href='#').blick Далее
-                                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 31.49 31.49', style='enable-background:new 0 0 31.49 31.49;', xml:space='preserve')
-                                            path(style='fill:#fff;', d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111\
-                                            C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587\
-                                            c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z')
             .step-slide
                 .quiz__wrap
                     .quiz-sidebar
                         .quiz-sidebar__pic
                             .quiz-sidebar__img
-                                img(src="img/foto.jpg", alt="Иван Лымар")
-                                img(src="img/foto-mob.jpg", alt="Иван Лымар" class="quiz-sidebar__img--mob")
-                            .quiz-sidebar__name Иван Лымар
-                            .quiz-sidebar__position Генеральный директор
+                                img(src="img/women.png", alt="Лэйсан Фаусовна")
+                            .quiz-sidebar__name Лэйсан Фаусовна
+                            .quiz-sidebar__position Руководитель школы Динамика
                         .quiz-sidebar__wrap
                             .quiz-sidebar__text 
-                                p Цена за услугу формируется индивидуально и зависит от нескольких факторов. 
-                                    span.text--medium Второй важный фактор - 
-                                    | площадь участка. Градация стоимости у нас: до 30 соток, от 30 до 60 соток, от 60 соток и выше. 
-                                    span.text--medium Важно: 
-                                    | если у Вас 1га и больше, то стоимость будет скорее всего как для участка до 30 соток. Иногда поле в га проще снять чем участок в 10 соток со всеми строениями и коммуникациями.
-                            .quiz-sidebar__title.text--medium До выбора подарка осталось: 
-                            .quiz-sidebar__subtitle.text--medium 3 вопроса
+                                p Здравствуйте! Я являюсь руководителем онлайн-школы и помогу вам на всём протяжении теста.
+                                p
+                                    span.text--medium К кадому вопросу будут мои пояснения и комментарии,
+                                    br.br-desktop
+                                    | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
+                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .quiz-sidebar__title До выбора подарка остался: 
+                            .quiz-sidebar__subtitle.text--medium 1 вопрос
                     .quiz__body.quiz__body5
-                        .step-slide__title Дополнительно требуются:
+                        .step-slide__title Насколько он хочет выучить английский?
                         .step-slide__bottom
                             .quiz-progress
-                                .quiz-progress__title Готово: 
-                                    span 50%
                                 .quiz-progress__steps
                                     .quiz-progress__item.active(style="width:50%")
                         .quiz__ans.question__ans--radio
                             label.pick-item
-                                input.pick-item__input(type='radio', name='question5', value='Геологические изыскания')
-                                .pick-item__label Геологические изыскания
+                                input.pick-item__input(type='radio', name='question5', value='Хочет, но не повезло с преподавателем')
+                                .pick-item__label Хочет, но не повезло с преподавателем
                             label.pick-item
-                                input.pick-item__input(type='radio', name='question5', value='Топосъемка под ландшафтный дизайн')
-                                .pick-item__label Топосъемка под ландшафтный дизайн
+                                input.pick-item__input(type='radio', name='question5', value='Учит каждый день и старается')
+                                .pick-item__label Учит каждый день и старается
                             label.pick-item
-                                input.pick-item__input(type='radio', name='question5', value='Постановка на кадастровый учет дома или участка')
-                                .pick-item__label Постановка на кадастровый учет дома или участка
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question5', value='Подеревная съемка')
-                                .pick-item__label Подеревная съемка
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question5', value='Бурение скважин  на воду')
-                                .pick-item__label Бурение скважин  на воду
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question5', value='Ничего из вышеперечисленого')
-                                .pick-item__label Ничего из вышеперечисленого
+                                input.pick-item__input(type='radio', name='question5', value='Пока не хочет, а мы заставляем')
+                                .pick-item__label Пока не хочет, а мы заставляем
                         .step-slide__bottom
                             .prev-next-container
                                 .quiz__error
@@ -288,115 +240,55 @@ section#quiz.quiz
                                     span Назад
                                 .si-button-pulse
                                     a.btn.btn-next.qa-next(href='#').blick Далее
-                                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 31.49 31.49', style='enable-background:new 0 0 31.49 31.49;', xml:space='preserve')
-                                            path(style='fill:#fff;', d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111\
-                                            C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587\
-                                            c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z')
-            .step-slide
-                .quiz__wrap
-                    .quiz-sidebar
-                        .quiz-sidebar__pic
-                            .quiz-sidebar__img
-                                img(src="img/foto.jpg", alt="Иван Лымар")
-                                img(src="img/foto-mob.jpg", alt="Иван Лымар" class="quiz-sidebar__img--mob")
-                            .quiz-sidebar__name Иван Лымар
-                            .quiz-sidebar__position Генеральный директор
-                        .quiz-sidebar__wrap
-                            .quiz-sidebar__text 
-                                p 
-                                    span.text--medium Второй важный фактор - 
-                                    | площадь участка. Градация стоимости у нас: до 30 соток, от 30 до 60 соток, от 60 соток и выше. 
-                                    span.text--medium Важно: 
-                                    | если у Вас 1га и больше, то стоимость будет скорее всего как для участка до 30 соток. Иногда поле в га проще снять чем участок в 10 соток со всеми строениями и коммуникациями.
-                            .quiz-sidebar__title.text--medium До выбора подарка осталось: 
-                            .quiz-sidebar__subtitle.text--medium 2 вопроса
-                    .quiz__body
-                        .step-slide__title Куда отправить расчёт стоимости топосьемки
-                        .step-slide__bottom
-                            .quiz-progress
-                                .quiz-progress__title Готово: 
-                                    span 62.5%
-                                .quiz-progress__steps
-                                    .quiz-progress__item.active(style="width:62.5%")
-                        .quiz__ans.question__ans--radio(style="display: block")
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question6', value='в WhatsApp')
-                                .pick-item__label в WhatsApp
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question6', value='по СМС')
-                                .pick-item__label по СМС
-                            label.pick-item
-                                input.pick-item__input(type='radio', name='question6', value='Бесплатная консултация по телефону (хочу узнать об акциях, которые сейчас приходят')
-                                .pick-item__label.flex-column 
-                                    span.text--medium Бесплатная консултация по телефону 
-                                    | (хочу узнать об акциях, которые сейчас приходят
-                        .step-slide__bottom
-                            .prev-next-container
-                                .quiz__error
-                                a.btn.btn-prev.qa-prev(href='#') 
-                                    span Назад
-                                .si-button-pulse
-                                    a.btn.btn-next.qa-next(href='#').blick Далее
-                                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 31.49 31.49', style='enable-background:new 0 0 31.49 31.49;', xml:space='preserve')
-                                            path(style='fill:#fff;', d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111\
-                                            C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587\
-                                            c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z')
             .step-slide.step-slide--text.step-slide--last
                 .quiz__wrap
-                    .quiz-sidebar
-                        .quiz-sidebar__pic
-                            .quiz-sidebar__img
-                                img(src="img/foto.jpg", alt="Иван Лымар")
-                                img(src="img/foto-mob.jpg", alt="Иван Лымар" class="quiz-sidebar__img--mob")
-                            .quiz-sidebar__name Иван Лымар
-                            .quiz-sidebar__position Генеральный директор
-                        .quiz-sidebar__wrap
-                            .quiz-sidebar__text 
-                                p 
-                                    span.text--medium Второй важный фактор - 
-                                    | площадь участка. Градация стоимости у нас: до 30 соток, от 30 до 60 соток, от 60 соток и выше. 
-                                    span.text--medium Важно: 
-                                    | если у Вас 1га и больше, то стоимость будет скорее всего как для участка до 30 соток. Иногда поле в га проще снять чем участок в 10 соток со всеми строениями и коммуникациями.
-                            .quiz-sidebar__title.text--medium До выбора подарка остался: 
-                            .quiz-sidebar__subtitle.text--medium 1 вопрос
                     .quiz__left
                         .quiz__body
-                            .step-slide__title 
-                                span.text--bold Укажите номер WhatsApp 
-                                span на который отправить точную стоимость и сроки выполнения работ по Вашему участку
-                            p Укажите WhatsApp и забронируйте скидку 1 000 рублей на услугу топосъемки * 
+                            .step-slide__title Благодарим 
+                                span за прохождение опроса!
+                            p Теперь ваш ребенок сможет бесплатно обучаться в нашей онлайн-школе и 
+                                span.text--medium вы увидите результаты через 7 дней. 
+                            .form-line.quiz__ans.quiz__ans--text
+                                label.pick-item.pick-item--text
+                                    input(type="text" placeholder="Ваше имя" name="name").rfield
                             .form-line.quiz__ans.quiz__ans--text
                                 label.pick-item.pick-item--text
                                     input(type="text" placeholder="Номер телефона" name="phone").rfield.phone-mask
-                            .agree 
-                                span.text--medium Нажимая на кнопку, 
-                                | вы даете согласие на обработку персональных данных и соглашаетесь с 
-                                a(href="policy.html" target="_blank").policy политикой конфиденциальности
+                            .form-line.quiz__ans.quiz__ans--text
+                                label.pick-item.pick-item--text
+                                    input(type="text" placeholder="E-mail, на которую придет файл с уроком" name="email").rfieldk
                             .step-slide__bottom
                                 .form-line-btn
                                     .quiz__error
                                     .btn.btn-finish.si-button-pulse
                                         .blick
-                                            input(type="submit" value="Получить расчет").quiz__btn
+                                            input(type="submit" value="Получить бонус").quiz__btn
+                            .agree 
+                                span Нажимая на кнопку «Пройти тест и получить бонус», я даю согласие на обработку персональных данных и соглашаюсь с 
+                                a(href="policy.html" target="_blank").policy политикой конфиденциальности
                     .quiz__right
-                        img(src="img/q-f.png", alt="phone")
-            .step-slide.step-slide--thank
-                .quiz__wrap
-                    .quiz__thank
-                        .step-slide__title Спасибо за доверие!
-                        p 
-                            span.text--medium Наш инженер приступил к расчету стоимости. 
-                            br
-                            | Если у него возникунут опросы, он вам перезвонит. Как только расчет будет готов, мы отправим его Вам.
-                        p Можете ознакомиться с обещанными бонусами:
-                        a.bonus(href="files/present.pdf" target="_blank")
-                            img(src="img/icons/pdf-logo.png" alt="present")
-                            span Скачать
-                        .advantages__item.advantages__item--red 
-                            span.text--bold Если с Вами оперативно не связались, 
-                            | не волнуйтесь, назначенный Вам инженер может быть занят и свяжется с Вами как только освободится
-                    .quiz__last-info
-                        .advantages__item.advantages__item--last 
-                            .advantages__text 
-                                span.text--medium После выполнения 
-                                | работ Вы получите все необходимые документы
+                        .home__bonus
+                            img(src="img/icons/pdf.svg" alt="pdf-icon" class="pdf-icon")
+                            p  Также вы получите pdf инструкцию, которая поможет учить 10 английских слов за день!
+                            p Для этого оставьте свои данные в форме слева и мы вышлем вам подарки.
+script.
+    function outputUpdate(vol) {
+    var output = document.querySelector('#volume');
+    output.value = vol;
+    output.style.left = vol - 20;
+    if (output.value > 9) {
+    output.style.left = vol - 30;
+    }
+    if (output.value > 99) {
+    output.style.left = vol - 40;
+    }
+    if (output.value > 240) {
+    output.style.left = vol - 45;
+    }
+    if (output.value > 430) {
+    output.style.left = vol - 50;
+    }
+    if (output.value > 470) {
+    output.style.left = vol - 55;
+    }
+    }
