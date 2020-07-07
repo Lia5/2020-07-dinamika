@@ -88,22 +88,7 @@ $(function() {
     //           ]
     //       });
     // }
-    if (jQuery('.tooltip').length) {
-        if (window.innerWidth < 1350 || window.screen.width < 1350) {
-            $('.tooltip__title').on('click', function () {
-                $(this).parent().toggleClass('active');
-                var tooltipQa = $(this);
-                $('body').mouseup(function (e) { // событие клика по веб-документу
-                    var div = $(".tooltip"); // тут указываем ID элемента
-                    // var close = $('.modal-close');
-                    if (!div.is(e.target) // если клик был не по нашему блоку
-                        && div.has(e.target).length === 0) { // и не по его дочерним элементам
-                        tooltipQa.parent().removeClass('active');
-                    }
-                });
-            });
-        }
-    }
+
 
     //animation-text
     if(jQuery('.letters').length) {
@@ -226,6 +211,7 @@ $(function() {
           e.preventDefault();
           var btn = $(this);
           var numModal = btn.attr('href');
+          console.log(numModal);
           if(numModal == '#modalQuiz'){
 
             $('.qa-del-discount').css('display', 'block');
@@ -233,12 +219,13 @@ $(function() {
           var modal =  $(numModal);
         //   modalWrap.removeClass('fadeOutUp');
         //   modalWrap.addClass('fadeInDown');
+          console.log(modal);
           modalWrap.removeClass('animated zoomOut');
           modalWrap.addClass('animated zoomIn');
           modal.removeClass('disabled');
           modal.addClass('flex');
           $('body').addClass('body-modal-open');
-          // body.addClass('body-modal');
+        //   body.addClass('body-modal');
 
         });
         $('.modal-close').click(function (){
@@ -348,8 +335,8 @@ $(function() {
 
                     if (!form.find('.empty_field').length) {
                         if(form.attr("name") == "quiz"){
-                            $('.step-slide--last').removeClass('step-slide--active');
-                            $('.step-slide--thank').addClass('step-slide--active');
+                            // $('.step-slide--last').removeClass('step-slide--active');
+                            // $('.step-slide--thank').addClass('step-slide--active');
                             // ym(62113519,'reachGoal','order'); 
                         }
                         $.ajax({
@@ -377,7 +364,19 @@ $(function() {
                             }, 1000);
                         });
                         console.log('123333');
-
+                        var numModal = form.find('.btn-finish').attr('data-modal');
+                        var modal =  $(numModal);
+                        var modalWrap = $('.modal__wrap');
+                        // modalWrap.removeClass('fadeOutUp');
+                        // modalWrap.addClass('fadeInDown');
+                        modalWrap.removeClass('animated zoomOut');
+                        modalWrap.addClass('animated zoomIn');
+                        $('.modal').addClass('disabled');
+                        modal.removeClass('disabled');
+                        modal.addClass('flex');
+                        if(form.attr("name") == "popup"){
+                            $('body').addClass('body-modal-open');  
+                        }
                         
 
                         $.ajax({

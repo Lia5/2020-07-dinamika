@@ -257,13 +257,13 @@ section#quiz.quiz
                                     input(type="text" placeholder="Номер телефона" name="phone").rfield.phone-mask
                             .form-line.quiz__ans.quiz__ans--text
                                 label.pick-item.pick-item--text
-                                    input(type="text" placeholder="E-mail, на которую придет файл с уроком" name="email").rfieldk
+                                    input(type="text" placeholder="E-mail, на которую придет файл с уроком" name="email").rfield
                             .step-slide__bottom
                                 .form-line-btn
                                     .quiz__error
-                                    .btn.btn-finish.si-button-pulse
+                                    .btn.btn-finish.si-button-pulse(data-modal="#modalFinish")
                                         .blick
-                                            input(type="submit" value="Получить бонус").quiz__btn
+                                            input(type="submit" value="Отправить заявку" ).quiz__btn
                             .agree 
                                 span Нажимая на кнопку «Пройти тест и получить бонус», я даю согласие на обработку персональных данных и соглашаюсь с 
                                 a(href="policy.html" target="_blank").policy политикой конфиденциальности
