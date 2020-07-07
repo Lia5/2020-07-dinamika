@@ -26,6 +26,7 @@
     "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
-    "gulp-v3": "^3.12.1"
+    "gulp-v3": "^3.12.1",
+    "input-range-scss": "^1.5.2"
   }
 }

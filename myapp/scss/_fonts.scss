@@ -1,12 +1,12 @@
 @import "_mixins/font-face";
 
 
-@include font-face("Gilroy", "../assets/fonts/Gilroy-SemiBold/Gilroy-SemiBold", 600);
+@include font-face("Gilroy", "../fonts/Gilroy-SemiBold/Gilroy-SemiBold", 600);
 
-@include font-face("Montserrat", "../assets/fonts/Montserrat-Thin/Montserrat-Thin", 200);
-@include font-face("Montserrat", "../assets/fonts/Montserrat-Light/Montserrat-Light", 300);
-@include font-face("Montserrat", "../assets/fonts/Montserrat-Regular/Montserrat-Regular", 400);
-@include font-face("Montserrat", "../assets/fonts/Montserrat-Medium/Montserrat-Medium", 500);
-@include font-face("Montserrat", "../assets/fonts/Montserrat-SemiBold/Montserrat-SemiBold", 600);
-@include font-face("RobotoCondensed", "../assets/fonts/RobotoCondensed-Light/RobotoCondensed-Light", 300);
-@include font-face("RobotoCondensed", "../assets/fonts/RobotoCondensed-Regular/RobotoCondensed-Regular", 400);
+@include font-face("Montserrat", "../fonts/Montserrat-Thin/Montserrat-Thin", 200);
+@include font-face("Montserrat", "../fonts/Montserrat-Light/Montserrat-Light", 300);
+@include font-face("Montserrat", "../fonts/Montserrat-Regular/Montserrat-Regular", 400);
+@include font-face("Montserrat", "../fonts/Montserrat-Medium/Montserrat-Medium", 500);
+@include font-face("Montserrat", "../fonts/Montserrat-SemiBold/Montserrat-SemiBold", 600);
+@include font-face("RobotoCondensed", "../fonts/RobotoCondensed-Light/RobotoCondensed-Light", 300);
+@include font-face("RobotoCondensed", "../fonts/RobotoCondensed-Regular/RobotoCondensed-Regular", 400);

@@ -1,14 +1,14 @@
 section#quiz.quiz
     .wrap
         .quiz__maintitle 
-            | Ответьте на 4 вопроса и 
-            span.text--medium Вы получите 
+            span Ответьте на 5 простых вопросов теста 
             br.br-desktop
-            | предварительный расчет стоимости 
+            span.text--medium.quiz__maintitle-accent Ви получите в подарок неделю бесплатного обучения 
             br.br-desktop
-            | топосъемки + 
-            span.text--medium гарантированный подарок
-        .quiz__mainsubtitle Тест основан на 238 объектах, выполненных нашей командой 
+            span.text--medium в онлайн-школе, а также pdf-файл 
+            br.br-desktop
+            span «Как учить 10 слов в день без зубрежки»
+        .quiz__mainsubtitle тест основан на результатах 1500 учениках, прошедших через нашу онлайн-школу за прошедший год
             br.br-desktop
             br.br-mobile
             | в Москве и МО
@@ -29,77 +29,71 @@ section#quiz.quiz
                     .quiz-sidebar
                         .quiz-sidebar__pic
                             .quiz-sidebar__img
-                                img(src="img/foto.jpg", alt="Иван Лымар")
-                                img(src="img/foto-mob.jpg", alt="Иван Лымар" class="quiz-sidebar__img--mob")
-                            .quiz-sidebar__name Иван Лымар
-                            .quiz-sidebar__position Генеральный директор
+                                img(src="img/women.png", alt="Лэйсан Фаусовна")
+                            .quiz-sidebar__name Лэйсан Фаусовна
+                            .quiz-sidebar__position Руководитель школы Динамика
                         .quiz-sidebar__wrap
                             .quiz-sidebar__text 
-                                p Цена за услугу формируется индивидуально и зависит от нескольких факторов. 
+                                p Здравствуйте! Я являюсь руководителем онлайн-школы и помогу вам на всём протяжении теста.
                                 p
-                                    span.text--medium Для начала выберите 
+                                    span.text--medium К кадому вопросу будут мои пояснения и комментарии,
                                     br.br-desktop
-                                    | категорию вашего участка, это поможет правильно рассчитать стоимость услуги
-                            .quiz-sidebar__title.text--medium До выбора подарка осталось: 
-                            .quiz-sidebar__subtitle.text--medium 7 вопросов
+                                    | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
+                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .quiz-sidebar__title До выбора подарка осталось: 
+                            .quiz-sidebar__subtitle.text--medium 5 вопросов
                     .quiz__body
-                        .step-slide__title Какой участок для съемки?
+                        .step-slide__title C какой целью хотите научить ребенка английскому?
                         .step-slide__bottom
                             .quiz-progress
-                                .quiz-progress__title Готово: 
-                                    span 0%
                                 .quiz-progress__steps
                                     .quiz-progress__item.active(style="width:0%")
                         .quiz__ans.question__ans--radio
                             label.pick-item
+                                input.pick-item__input(type='radio', name='question1', value='Для сдачи ЭГЭ, ОГЭ на 100 баллов')
                                 .label-img
-                                    img(src="img/q1-1.jpg", alt="quiz")
-                                input.pick-item__input(type='radio', name='question1', value='Частный')
-                                .pick-item__label Частный
+                                    img(src="img/quiz/1.png", alt="quiz")
+                                .pick-item__label Для сдачи ЭГЭ, ОГЭ на 100 баллов
                             label.pick-item
+                                input.pick-item__input(type='radio', name='question1', value='Для поступления в престижный Университет')
                                 .label-img
-                                    img(src="img/q1-2.jpg", alt="quiz")
-                                input.pick-item__input(type='radio', name='question1', value='Городская застройка')
-                                .pick-item__label Городская застройка
+                                    img(src="img/quiz/2.png", alt="quiz")
+                                .pick-item__label Для поступления в престижный Университет
                             label.pick-item
+                                input.pick-item__input(type='radio', name='question1', value='Для поездок за границу и свободного владения языком')
                                 .label-img
-                                    img(src="img/q1-3.jpg", alt="quiz")
-                                input.pick-item__input(type='radio', name='question1', value='Промышенный')
-                                .pick-item__label Промышенный
+                                    img(src="img/quiz/3.png", alt="quiz")
+                                .pick-item__label Для поездок за границу и свободного владения языком
                             label.pick-item
+                                input.pick-item__input(type='radio', name='question1', value='Чтобы ребенок знал английский на 5 в школе')
                                 .label-img
-                                    img(src="img/q1-4.jpg", alt="quiz")
-                                input.pick-item__input(type='radio', name='question1', value='Поле/лес')
-                                .pick-item__label Поле\лес
+                                    img(src="img/quiz/4.png", alt="quiz")
+                                .pick-item__label Чтобы ребенок знал английский на 5 в школе
                         .step-slide__bottom
                             .prev-next-container
                                 .quiz__error
                                 .si-button-pulse
-                                    a.btn.btn-next.qa-next(href='#').blick Далее
-                                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 31.49 31.49', style='enable-background:new 0 0 31.49 31.49;', xml:space='preserve')
-                                            path(style='fill:#fff;', d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111\
-                                            C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587\
-                                            c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z')
+                                    a.btn.btn-next.qa-next(href='#').blick Следующий вопрос
             .step-slide
                 .quiz__wrap
                     .quiz-sidebar
                         .quiz-sidebar__pic
                             .quiz-sidebar__img
-                                img(src="img/foto.jpg", alt="Иван Лымар")
-                                img(src="img/foto-mob.jpg", alt="Иван Лымар" class="quiz-sidebar__img--mob")
-                            .quiz-sidebar__name Иван Лымар
-                            .quiz-sidebar__position Генеральный директор
+                                img(src="img/women.png", alt="Лэйсан Фаусовна")
+                            .quiz-sidebar__name Лэйсан Фаусовна
+                            .quiz-sidebar__position Руководитель школы Динамика
                         .quiz-sidebar__wrap
                             .quiz-sidebar__text 
-                                p 
-                                    span.text--medium Второй важный фактор - 
-                                    | площадь участка. Градация стоимости у нас: до 30 соток, от 30 до 60 соток, от 60 соток и выше. 
-                                    span.text--medium Важно: 
-                                    | если у Вас 1га и больше, то стоимость будет скорее всего как для участка до 30 соток. Иногда поле в га проще снять чем участок в 10 соток со всеми строениями и коммуникациями.
-                            .quiz-sidebar__title.text--medium До выбора подарка осталось: 
-                            .quiz-sidebar__subtitle.text--medium 6 вопросов
+                                p Здравствуйте! Я являюсь руководителем онлайн-школы и помогу вам на всём протяжении теста.
+                                p
+                                    span.text--medium К кадому вопросу будут мои пояснения и комментарии,
+                                    br.br-desktop
+                                    | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
+                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .quiz-sidebar__title До выбора подарка осталось: 
+                            .quiz-sidebar__subtitle.text--medium 4 вопроса
                     .quiz__body
-                        .step-slide__title Какая площадь участка?
+                        .step-slide__title Сколько лет вашему ребенку?
                         .step-slide__bottom
                             .quiz-progress
                                 .quiz-progress__title Готово: 
@@ -107,6 +101,10 @@ section#quiz.quiz
                                 .quiz-progress__steps
                                     .quiz-progress__item.active(style="width:12.5%")
                         .quiz__ans.question__ans--radio
+                            .slider
+                                output#volume(for='fader') 7
+                                input#fader(type='range', name='year', min='7', max='18', value='0', step='1', oninput='outputUpdate(value)')
+
                             label.pick-item
                                 input.pick-item__input(type='radio', name='question2', value='До 15 соток')
                                 .pick-item__label До 15 соток
