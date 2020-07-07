@@ -661,17 +661,21 @@
             background: url('../img/bg-main.png') no-repeat;
             background-position: center;
             background-size: cover;
+            padding-top: 64px;
+
             .step-slide__title {
+                font-family: "Montserrat";
                 color: #272727;
-                font-size: 35px;
+                font-size: 26px;
                 font-weight: 600;
-                line-height: 47px;
+                line-height: 34px;
                 margin-bottom: 30px;
             }
             .home__bonus {
-                max-width: 288px;
-                padding: 56px 51px;
+                max-width: 349px;
+                padding: 68px 88px;
                 font-size: 13px;
+                margin-top: auto;
                 &:before {
                     transform: rotate(-82deg);
                     top: 0;
@@ -919,7 +923,7 @@
     justify-content: center;
 }
 .quiz__left {
-
+    width: 60%;
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
    
@@ -949,7 +953,7 @@
         line-height: 1.5;
         letter-spacing: 1px;
         font-size: 18px;
-        max-width: 339px;
+        max-width: 626px;
         @media screen and (max-width: 749px){
             margin-left: 0;
             font-size: 16px;
@@ -961,6 +965,9 @@
     .step-slide__bottom {
         position: relative;
     }
+}
+.quiz__right {
+    display: flex;
 }
 .quiz__last-info {
     .advantages__item {
@@ -981,14 +988,22 @@
 }
 .quizForm {
     width: 100%;
-    .phone-mask {
-        min-width: 290px;
-        padding: 35px 32px;
+    .quiz__left {
+        input {
+            max-width: 350px;
+            width: 100%;
+            padding: 35px 32px;
+        }
+        .btn {
+            min-width: 350px;
+            @media screen and (max-width: 749px){
+                min-width: 100%;
+            }
+        }
     }
     .form-line {
-        padding-left: 10px;
         @media screen and (max-width: 749px){
-            padding-left: 0;
+       
         }
 
     }
