@@ -1,7 +1,7 @@
 .quiz {
     background: url('../img/clouds.jpg');
     margin-top: -50px;
-    padding-top: 167px;
+    padding-top: 158px;
     padding-bottom: 20px;
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
@@ -27,7 +27,7 @@
         font-weight: 300;
         line-height: 42.47px;
         text-align: center;
-        margin-bottom: 23px;
+        margin-bottom: 39px;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
 
@@ -75,7 +75,7 @@
             background: transparent;
         }
         &__wrap {
-            padding: 0 25px 10px;
+            padding: 0 14px 10px 30px;
             min-height: 494px;
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
@@ -109,12 +109,12 @@
                 display: block;
                 width: 100%;
                 max-width: 141px;
-                margin: -50px auto 70px;
+                margin: -37px auto 70px;
             }
         }
         &__name {
             position: absolute;
-            bottom: 55px;
+            bottom: 48px;
             left: 50%;
             margin-right: -50%;
             transform: translate(-50%, 0);
@@ -130,7 +130,7 @@
         }
         &__position {
             position: absolute;
-            bottom: 29px;
+            bottom: 25px;
             left: 50%;
             margin-right: -50%;
             transform: translate(-50%, 0);
@@ -433,12 +433,14 @@
 }
 .step {
     &-slide {
-        // display: none;
+        display: none;
         flex-direction: column;
         min-height: 645px;
-        padding: 26px 0 55px;
+        margin-top: 43px;
+        padding: 0 0 55px;
         background: url('../img/quiz-bg.png') no-repeat;
         background-size: 100% 100%;
+        box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.33);
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             margin-left: -15px;
@@ -468,8 +470,8 @@
             font-weight: 600;
             letter-spacing: 0.51px;
             color: #010101;
-            margin-bottom: 20px;
-            min-height: 87px;
+            margin-bottom: 29px;
+            min-height: 62px;
             display: flex;
             align-items: flex-end;
             @media only screen and (max-width: 1350px) and (orientation: portrait),
@@ -958,23 +960,6 @@
     }
     .step-slide__bottom {
         position: relative;
-    }
-}
-.agree {
-    font-size: 13px;
-    line-height: 17px;
-    margin: 14px 10px 45px 12px;
-    max-width: 300px;
-    font-size: 13px;
-    line-height: 17px;
-    @media only screen and (max-width: 1350px) and (orientation: portrait),
-    screen and (max-width: 1080px) {
-        margin: 44px 10px 85px 12px;
-    }
-    @media screen and (max-width: 749px){
-        font-size: 11px;
-        margin-top: 0;
-        margin-bottom: 40px;
     }
 }
 .quiz__last-info {

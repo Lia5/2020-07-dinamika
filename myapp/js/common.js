@@ -176,6 +176,10 @@ $(function() {
                 $(this).closest('.prev-next-container').find('.quiz__error').text('Выберите 2 варианта ответа!');
             } else if ($(this).closest('.step-slide').hasClass('step-slide--first') && $(this).closest('.step-slide').find('input:checked').length >2 ) {
                 $(this).closest('.prev-next-container').find('.quiz__error').text('Выберите только 2 варианта ответа!');
+            } else if ($(this).closest('.step-slide').hasClass('step-slide--range') && $(this).closest('.step-slide').find('#volumeAge').val() == '' ) {
+                $(this).closest('.prev-next-container').find('.quiz__error').text('Выберите возраст');
+            } else if ($(this).closest('.step-slide').hasClass('step-slide--range') && !$(this).closest('.step-slide').find('#volumeAge').val() == '' ) {
+                $(this).closest('.step-slide').removeClass('step-slide--active').next().addClass('step-slide--active');
             } else if ($(this).closest('.step-slide').hasClass('step-slide--text') && $(this).closest('.step-slide').find('input').val() == '' ) {
                 $(this).closest('.prev-next-container').find('.quiz__error').text('Введите ответ');
             } else if ( $(this).closest('.step-slide').find('.quiz__ans--other-text.active input').val() == '') {

@@ -74,7 +74,7 @@ section#quiz.quiz
                                 .quiz__error
                                 .si-button-pulse
                                     a.btn.btn-next.qa-next(href='#').blick Следующий вопрос
-            .step-slide
+            .step-slide.step-slide--range
                 .quiz__wrap
                     .quiz-sidebar
                         .quiz-sidebar__pic
@@ -103,7 +103,8 @@ section#quiz.quiz
                         .quiz__ans.question__ans--radio
                             .slider
                                 output#volume(for='fader') 7
-                                input#fader(type='range', name='question2', min='7', max='18', value='0', step='1', oninput='outputUpdate(value)')
+                                input#fader(type='range', min='7', max='18', value='0', step='1', oninput='outputUpdate(value)')
+                                input(hidden type="text", name='question2', id="volumeAge")
                         .step-slide__bottom
                             .prev-next-container
                                 .quiz__error
@@ -273,7 +274,11 @@ section#quiz.quiz
                             p Для этого оставьте свои данные в форме слева и мы вышлем вам подарки.
 script.
     function outputUpdate(vol) {
+
+    var age = document.querySelector('#volumeAge');
     var output = document.querySelector('#volume');
+    age.value = vol;
+    console.log(age.value);
     output.value = vol;
     output.style.left = vol - 20;
     if (output.value > 9) {

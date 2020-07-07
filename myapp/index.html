@@ -39,19 +39,10 @@
         <div class="wrap">
           <div class="home__body"> 
             <div class="home__pre">Ребенок не может выучить английский?</div>
-            <div class="home__title animated-parent">
-              <div class="letters">К концу лета ваш ребенок по-английски </div>
-              <div class="letters text--medium">будет понимать и составлять  </div>
-              <div class="letters">предложения</div>
-            </div>
+            <div class="home__title animated-parent"><span class="letters">К концу лета ваш ребенок</span><br class="br-desktop"><span class="letters">по-английски </span><span class="letters text--medium">будет понимать </span><br class="br-desktop"><span class="letters text--medium">и составлять  </span><span class="letters">предложения</span></div>
             <div class="home__subtitle">благодаря игровому онлайн-обучению <span class="text--medium">в сертифицированной школе </span>«Динамика»</div>
-            <ul class="home__list">
-              <li class="home__text animated"><span class="text--medium">от специалистов с опытом </span><br class="br-desktop"><br class="br-planshet"><span>работы более 8 лет </span></li>
-              <li class="home__text animated"><span class="text--medium">без проволочек </span><span>с документами</span></li>
-              <li class="home__text animated"><span class="text--medium">гарантией </span><span>прохождения экспертизы</span></li>
-            </ul>
             <div class="home__btn">
-              <div class="si-button-pulse"> <a class="btn btn--icon scroll-to blick" href="#quiz"> <span class="text--medium">Пройти тест и получить бонус </span></a></div>
+              <div class="si-button-pulse"> <a class="btn btn--icon scroll-to blick" href="#quiz"> <span>Пройти тест и получить бонус </span></a></div>
             </div>
             <div class="agree">Нажимая на кнопку «Пройти тест и получить бонус», я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</div>
           </div>
@@ -60,7 +51,8 @@
               <div class="home__text">Уделите пару минут своего времени на онлайн-тестирование из 5 вопросов и 
                 <stromg>получите неделю бесплатного обучения</stromg>
               </div>
-            </div><a class="home__bonus" href=""><img class="pdf-icon" src="img/icons/pdf.svg" alt="pdf-icon"><span> + PDF файл «Как учить 10 слов в день без зубрежки»</span></a>
+            </div>
+            <div class="home__bonus"><img class="pdf-icon" src="img/icons/pdf.svg" alt="pdf-icon"><span> + PDF файл «Как учить 10 слов в день без зубрежки»</span></div>
           </div>
         </div>
       </section>
@@ -78,7 +70,7 @@
           </div>
           <div class="features__item">
             <div class="features__pic"><img src="img/whatdo/3.png" alt="whatdo"></div>
-            <div class="features__text">Не зубрим темы из учебника,<span>80% материала осваиваете </span>на разговорной практике</div>
+            <div class="features__text">Не зубрим <br class="br-desktop">темы из учебника,<span>80% материала осваиваете </span>на разговорной практике</div>
           </div>
         </div>
       </div>
@@ -156,7 +148,7 @@
               </div>
             </div>
           </div>
-          <div class="step-slide">
+          <div class="step-slide step-slide--range">
             <div class="quiz__wrap">
               <div class="quiz-sidebar">
                 <div class="quiz-sidebar__pic">
@@ -186,7 +178,8 @@
                 <div class="quiz__ans question__ans--radio">
                   <div class="slider">
                     <output id="volume" for="fader">7</output>
-                    <input id="fader" type="range" name="question2" min="7" max="18" value="0" step="1" oninput="outputUpdate(value)">
+                    <input id="fader" type="range" min="7" max="18" value="0" step="1" oninput="outputUpdate(value)">
+                    <input hidden type="text" name="question2" id="volumeAge">
                   </div>
                 </div>
                 <div class="step-slide__bottom">
@@ -395,7 +388,11 @@
     </section>
     <script>
       function outputUpdate(vol) {
+      
+      var age = document.querySelector('#volumeAge');
       var output = document.querySelector('#volume');
+      age.value = vol;
+      console.log(age.value);
       output.value = vol;
       output.style.left = vol - 20;
       if (output.value > 9) {

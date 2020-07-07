@@ -33,7 +33,7 @@ body {
 	position: relative;
 	line-height: 21px;
 	font-family: "Montserrat", Arial, Helvetica, sans-serif;
-	color: #252525;
+	color: #1b1b1b;
 	font-weight: 400;
 	overflow-x: hidden;
 
@@ -199,7 +199,7 @@ ul,li {
 	text-transform: uppercase;
 	line-height: 1.4;
 	color: #fff;
-    padding: 34px 25px 28px 25px;
+    padding: 34px 25px 28px 31px;
 	transition: 0.5s;
 	cursor: pointer;
 	background: #1da2ca;
@@ -209,6 +209,7 @@ ul,li {
     min-width: 325px;
 	text-align: center;
 	border-radius: 10px;
+	font-weight: 600;
 	
 	@media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
@@ -235,7 +236,7 @@ ul,li {
 		background-image: linear-gradient(to right, #1da2ca, #30d6fc);
 	}
 	&--icon {
-		padding-right: 65px;
+		padding-right: 61px;
 		&:before {
 			content: "";
             position: absolute;
