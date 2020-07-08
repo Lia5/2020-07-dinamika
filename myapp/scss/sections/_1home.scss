@@ -2,15 +2,12 @@
     position: relative; 
     margin-top: auto;
     margin-bottom: auto;
-    // padding-top: 17px;
     padding: 49px 0 120px;
-    @media screen and (max-width: 1919px) {
-        overflow: hidden;
-    }
+
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
-        padding-bottom: 27px;
-        padding-top: 43px;
+        padding-bottom: 80px;
+        padding-top: 23px;
         overflow: hidden;
     }
     @media screen and (max-width: 749px){
@@ -27,6 +24,10 @@
         height: 597px;
         background: url('../img/flag.png') no-repeat;
         background-size: 100% 100%;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            content: none;
+        }
     }
     .wrap {
         display: flex;
@@ -52,6 +53,11 @@
         letter-spacing: 1px;
         margin-top: 26px;
         margin-bottom: 22px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            font-size: 18px;
+            padding: 6px 12px 6px 19px;
+        }
     }
     &__body {
         width: 50%;
@@ -59,8 +65,8 @@
         padding-right: 20px;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-            width: 100%;
-            position: relative;
+            width: 61%;
+            max-width: 471px;
         }
         @media screen and (max-width: 749px){
             padding-right: 0;
@@ -80,7 +86,9 @@
         // max-width: 600px;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-
+            font-size: 29px;
+            line-height: 36px;
+            margin-bottom: 21px;
         }
         @media screen and (max-width: 749px){
 
@@ -97,6 +105,14 @@
         line-height: 32.77px;
         margin-left: 28px;
         margin-bottom: 60px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            max-width: 369px;
+            font-size: 18px;
+            line-height: 30px;
+            margin-left: 0;
+            margin-bottom: 35px;
+        }
     }
     
     &__btn {
@@ -104,12 +120,12 @@
         display: flex;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-
+            margin-left: 0;
         }
         @media screen and (max-width: 749px){
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
+            // margin-left: auto;
+            // margin-right: auto;
+            // justify-content: center;
         }
         @media screen and (max-height: 850px) and  (min-width: 1081px) {
 
@@ -121,11 +137,20 @@
     }
     &__side {
         width: 50%;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            width: 39%;
+            display: flex;
+        }
     }
     &__test {
         margin-left: auto;
         max-width: 300px;
         text-align: center;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            display: none;
+        }
     }
     &__bonus {
         display: block;
@@ -135,6 +160,11 @@
         margin: 27px auto 0;
         padding: 65px 57px;
         z-index: 1;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            margin-top: auto;
+            transform: translate(-115px,27px);
+        }
         &::before {
             position: absolute;
             content: "";
@@ -144,6 +174,10 @@
             width: 100px;
             height: 90px;
             z-index: 1;
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                content: none;
+            }
         }
         &:after {
             content: "";
@@ -180,7 +214,8 @@
 
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
-        margin: 44px 10px 85px 12px;
+        margin: 32px 0 0 ;
+        max-width: 313px;
     }
     @media screen and (max-width: 749px){
         font-size: 11px;

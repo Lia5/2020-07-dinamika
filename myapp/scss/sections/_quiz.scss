@@ -3,16 +3,14 @@
     margin-top: -50px;
     padding-top: 158px;
     padding-bottom: 20px;
+    overflow: hidden;
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
-        margin-top: -71px;
-        padding-top: 10px;
-        padding-bottom: 92px;
-        background: none;
+        padding-top: 108px;
     }
-        @media screen and (max-width: 749px){
-            padding-bottom: 147px;
-        }
+    @media screen and (max-width: 749px){
+
+    }
     &__wrap {
         display: flex;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
@@ -30,25 +28,28 @@
         margin-bottom: 39px;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-
+            margin-bottom: 0;
+            font-size: 25px;
+            line-height: 35px;
         }
         @media screen and (max-width: 749px){
 
         }
         &-accent {
             color: $accent;
+            letter-spacing: -0.5px;
         }
     }
     &__mainsubtitle {
         color: #7b7b7b;
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 300;
         letter-spacing: 0.4px;
         margin-top: 30px;
         text-align: center;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-
+            margin-top: 17px;
         }
 
     }
@@ -81,9 +82,9 @@
             screen and (max-width: 1080px) {
                 display: flex;
                 flex-wrap: wrap;
-                width: 70%;
+                width: 63%;
                 min-height: auto;
-                padding: 0 5% 10px;
+                padding: 24px 5% 10px;
             }
 
             @media screen and (max-width: 749px){
@@ -95,8 +96,8 @@
             position: relative;
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
-                width: 35%;
-                max-width: 250px;
+                width: 36%;
+                max-width: 270px;
             }
             @media screen and (max-width: 749px){
                 order: 1;
@@ -126,6 +127,10 @@
             background: #fff;
             z-index: 1;
             border-radius: 8px;
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                
+            }
 
         }
         &__position {
@@ -141,20 +146,18 @@
             font-size: 13px;
             font-weight: 300;
             letter-spacing: 0.13px;
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                
+            }
         }
         &__text {
             margin-bottom: 40px;
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
-                width: 100%;
                 order: 1;
+                flex-wrap: wrap;
                 margin-bottom: 0;
-            }
-            @media screen and (max-width: 749px){
-                margin-top: 22px;
-            }
-            p {
-                margin: 0 0 10px 0;
             }
         }
         &__title {
@@ -165,7 +168,7 @@
             text-align: center;
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
-  
+                flex-grow: 1;
             }
         }
         &__subtitle {
@@ -179,7 +182,8 @@
             margin-bottom: 90px;
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
-
+                margin-bottom: 0;
+                flex-grow: 1;
             }
             @media screen and (max-width: 749px){
 
@@ -189,11 +193,15 @@
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
                 display: flex;
-                img {
-                    margin-top: auto;
-                    @media screen and (max-width: 749px){
-                        display: none;
-                    }
+            }
+            img {
+                margin-top: auto;
+                @media only screen and (max-width: 1350px) and (orientation: portrait),
+                screen and (max-width: 1080px) {
+                    margin-top: 42px;
+                }
+                @media screen and (max-width: 749px){
+                    display: none;
                 }
             }
         }
@@ -212,7 +220,7 @@
         margin-bottom: auto;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-            margin-bottom: 40px;
+
         }
         @media screen and (max-width: 749px){
             width: 100%;
@@ -244,6 +252,7 @@
         width: 75%;
         padding-left: 33px;
         padding-right: 51px;
+        background-color: #fff;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             width: 100%;
@@ -252,11 +261,11 @@
 
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-            padding-bottom: 73px;
+            padding-bottom: 47px;
         }
     }
     &__body4 {
-        background: url('../img/q4.jpg') no-repeat;
+        background: url('../img/calendar.png') no-repeat;
         background-position: bottom right 20px;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
@@ -274,7 +283,7 @@
                 right: -19vw;
                 width: 376px;
                 height: 391px;
-                background: url('../img/q4.jpg') no-repeat;
+                background: url('../img/calendar.png') no-repeat;
                 transform: rotate(-59deg);
             }
         }
@@ -290,39 +299,9 @@
                 left: 61vw;
             }
         }
-    }
-    &__body5 {
-        background: url('../img/q5.jpg') no-repeat;
-        background-position: bottom right;
-        @media screen and (max-width: 880px){
-            background-size: 154px 213px;
-        }
-        @media screen and (max-width: 549px){
-            position: relative;
-            background: none;
-            overflow: hidden;
-            &:before {
-                content: "";
-                pointer-events: none;
-                position: absolute;
-                bottom: 0;
-                right: -62vw;
-                width: 376px;
-                height: 391px;
-                background: url('../img/q5.jpg') no-repeat;
-                transform: rotate(-27deg);
-            }
-        }
-        @media screen and (max-width: 411px){
-            &:before {
-                left: 71vw;
-                bottom: 58px;
-            }
-        }
-        @media screen and (max-width: 379px){
-            &:before {
-                left: 84vw;
-            }
+        .pick-item {
+            width: 48%;
+            margin-right: 2%;
         }
     }
     &-progress {
@@ -332,11 +311,10 @@
 
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-
-            margin-bottom: 60px;
+            margin-bottom: 15px;
         }
         @media screen and (max-width: 749px){
-            margin-bottom: 38px;
+            // margin-bottom: 38px;
         }
         &__title {
             margin-bottom: 11px;
@@ -437,7 +415,7 @@
         flex-direction: column;
         min-height: 645px;
         margin-top: 43px;
-        padding: 0 0 55px;
+        padding: 0 0 0;
         background: url('../img/quiz-bg.png') no-repeat;
         background-size: 100% 100%;
         box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.33);
@@ -477,6 +455,7 @@
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
                 margin-bottom: 26px;
+                min-height: 73px;
             }
             @media screen and (max-width: 749px){
                 line-height: 1.3;
@@ -765,8 +744,7 @@
         padding: 10px 10px 10px 40px;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-            min-height: 59px;
-            font-size: 15px;
+
         }
         &:before {
             content: "";
@@ -785,12 +763,10 @@
                 
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
-                width: 37px;
-                height: 37px;
+ 
             }
             @media screen and (max-width: 749px){
-                width: 34px;
-                height: 34px;
+
             }
         }
     }
@@ -935,6 +911,7 @@
         width: 100%;
         padding-left: 40px;
         padding-right: 21px;
+        background: transparent;
 
         @media screen and (max-width: 749px){
             padding-left: 14px;
@@ -988,6 +965,30 @@
 }
 .quizForm {
     width: 100%;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: -522px;
+        width: 802px;
+        height: 793px;
+        background: url('../img/big-ben.png') no-repeat;
+        background-size: 100% 100%;
+        z-index: -1;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: -98px;
+        right: -174px;
+        width: 373px;
+        height: 375px;
+        background: url('../img/flag-2.png') no-repeat;
+        background-size: 100% 100%;
+        z-index: -1;
+                                                                             
+    }
     .quiz__left {
         input {
             max-width: 350px;
@@ -1011,6 +1012,10 @@
 .gift-img {
     margin: 0 auto;
     display: block;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        width: 100%;
+    }
 }
 .slider {
     position: relative;

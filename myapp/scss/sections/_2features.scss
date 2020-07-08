@@ -1,17 +1,35 @@
 .features {
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        z-index: 1;
+    }
     &__items {
         display: flex;
         justify-content: space-between;
     }
     &__item {
+        img {
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                max-width: 100%;
+            }
+        }
         &:nth-child(1) {
             .features__pic {
                 transform: translate(24px,-1px);
+                @media only screen and (max-width: 1350px) and (orientation: portrait),
+                screen and (max-width: 1080px) {
+                    transform: translate(0px,-15px);
+                }
             }
         }
         &:nth-child(2) {
             .features__pic {
                 transform: translate(-15px,55px);
+                @media only screen and (max-width: 1350px) and (orientation: portrait),
+                screen and (max-width: 1080px) {
+                    transform: translate(-5px,18px);
+                }
             }
             .features__text {
                 margin-left: 50px;
@@ -21,6 +39,10 @@
             .features__pic {
                 margin-top: -50px;
                 transform: translate(-54px,22px);
+                @media only screen and (max-width: 1350px) and (orientation: portrait),
+                screen and (max-width: 1080px) {
+                    transform: translate(-28px,12px);
+                }
             }
             .features__text {
                 max-width: 343px;
@@ -35,6 +57,12 @@
         letter-spacing: 0.6px;
         margin-top: 16px;
         line-height: 29px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 0;
+        }
         span {
             display: block;
             font-weight: 600;

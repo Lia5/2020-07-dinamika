@@ -3,10 +3,13 @@ section#quiz.quiz
         .quiz__maintitle 
             span Ответьте на 5 простых вопросов теста 
             br.br-desktop
+            br.br-planshet
             span.text--medium.quiz__maintitle-accent Ви получите в подарок неделю бесплатного обучения 
             br.br-desktop
+            br.br-planshet
             span.text--medium в онлайн-школе, а также pdf-файл 
             br.br-desktop
+            br.br-planshet
             span «Как учить 10 слов в день без зубрежки»
         .quiz__mainsubtitle тест основан на результатах 1500 учениках, прошедших через нашу онлайн-школу за прошедший год
             br.br-desktop
@@ -39,7 +42,8 @@ section#quiz.quiz
                                     span.text--medium К кадому вопросу будут мои пояснения и комментарии,
                                     br.br-desktop
                                     | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
-                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .gift-img
+                                img(src="img/icons/gift.svg" class="" alt="gift")
                             .quiz-sidebar__title До выбора подарка осталось: 
                             .quiz-sidebar__subtitle.text--medium 5 вопросов
                     .quiz__body
@@ -89,7 +93,8 @@ section#quiz.quiz
                                     span.text--medium К кадому вопросу будут мои пояснения и комментарии,
                                     br.br-desktop
                                     | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
-                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .gift-img
+                                img(src="img/icons/gift.svg" class="" alt="gift")
                             .quiz-sidebar__title До выбора подарка осталось: 
                             .quiz-sidebar__subtitle.text--medium 4 вопроса
                     .quiz__body
@@ -127,7 +132,8 @@ section#quiz.quiz
                                     span.text--medium К кадому вопросу будут мои пояснения и комментарии,
                                     br.br-desktop
                                     | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
-                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .gift-img
+                                img(src="img/icons/gift.svg" class="" alt="gift")
                             .quiz-sidebar__title До выбора подарка осталось: 
                             .quiz-sidebar__subtitle.text--medium 3 вопроса
                     .quiz__body
@@ -174,7 +180,8 @@ section#quiz.quiz
                                     span.text--medium К кадому вопросу будут мои пояснения и комментарии,
                                     br.br-desktop
                                     | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
-                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .gift-img
+                                img(src="img/icons/gift.svg" class="" alt="gift")
                             .quiz-sidebar__title До выбора подарка осталось: 
                             .quiz-sidebar__subtitle.text--medium 2 вопроса
                     .quiz__body.quiz__body4
@@ -200,7 +207,7 @@ section#quiz.quiz
                                     span Назад
                                 .si-button-pulse
                                     a.btn.btn-next.qa-next(href='#').blick Далее
-            .step-slide
+            .step-slide.step-slide--with-img
                 .quiz__wrap
                     .quiz-sidebar
                         .quiz-sidebar__pic
@@ -215,10 +222,11 @@ section#quiz.quiz
                                     span.text--medium К кадому вопросу будут мои пояснения и комментарии,
                                     br.br-desktop
                                     | рекомендую читать внимательно, ведь это поможет вам более точно заполнить анкету и получить наиболее квалифицированную помощь в изучении английского языка.
-                            img(src="img/icons/gift.svg" class="gift-img" alt="gift")
+                            .gift-img
+                                img(src="img/icons/gift.svg" class="" alt="gift")
                             .quiz-sidebar__title До выбора подарка остался: 
                             .quiz-sidebar__subtitle.text--medium 1 вопрос
-                    .quiz__body.quiz__body5
+                    .quiz__body
                         .step-slide__title Насколько он хочет выучить английский?
                         .step-slide__bottom
                             .quiz-progress
@@ -227,12 +235,18 @@ section#quiz.quiz
                         .quiz__ans.question__ans--radio
                             label.pick-item
                                 input.pick-item__input(type='radio', name='question5', value='Хочет, но не повезло с преподавателем')
+                                .label-img
+                                    img(src="img/quiz/8.png", alt="quiz")
                                 .pick-item__label Хочет, но не повезло с преподавателем
                             label.pick-item
                                 input.pick-item__input(type='radio', name='question5', value='Учит каждый день и старается')
+                                .label-img
+                                    img(src="img/quiz/9.png", alt="quiz")
                                 .pick-item__label Учит каждый день и старается
                             label.pick-item
                                 input.pick-item__input(type='radio', name='question5', value='Пока не хочет, а мы заставляем')
+                                .label-img
+                                    img(src="img/quiz/10.png", alt="quiz")
                                 .pick-item__label Пока не хочет, а мы заставляем
                         .step-slide__bottom
                             .prev-next-container

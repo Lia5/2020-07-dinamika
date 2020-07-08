@@ -453,6 +453,30 @@
     max-width: 450px;
   }
 }
+#modalSupport {
+  .modal__wrap {
+    max-width: 420px;
+    text-align: center;
+  }
+  .modal__body {
+    padding: 5%;
+  }
+  .modal__title {
+    font-family: "RobotoCondensed";
+  }
+  .modal__subtitle {
+    max-width: none;
+  }
+  label {
+    width: 100%;
+  }
+  .form-line-btn {
+    margin-top: 17px;
+  }
+  .agree {
+    margin: 35px auto;
+  }
+}
 
 .bonus {
   max-width: 150px;
