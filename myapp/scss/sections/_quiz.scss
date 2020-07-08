@@ -9,7 +9,7 @@
         padding-top: 108px;
     }
     @media screen and (max-width: 749px){
-
+        padding-top: 140px;
     }
     &__wrap {
         display: flex;
@@ -33,7 +33,8 @@
             line-height: 35px;
         }
         @media screen and (max-width: 749px){
-
+            font-size: 20px;
+            line-height: 29px;
         }
         &-accent {
             color: $accent;
@@ -220,7 +221,7 @@
         margin-bottom: auto;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-
+            margin: 50px 0;
         }
         @media screen and (max-width: 749px){
             width: 100%;
@@ -522,10 +523,6 @@
                 }
                 &__label {
                     padding-left: 17px;
-                    @media only screen and (max-width: 1350px) and (orientation: portrait),
-                    screen and (max-width: 1080px) {
-
-                    }
                     @media screen and (max-width: 749px){
                         min-height: 53px;
                         margin-top: 22px;
@@ -641,6 +638,10 @@
             background-position: center;
             background-size: cover;
             padding-top: 64px;
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                background-image: url('../img/bg-main-750.jpg');
+            }
 
             .step-slide__title {
                 font-family: "Montserrat";
@@ -655,6 +656,15 @@
                 padding: 68px 88px;
                 font-size: 13px;
                 margin-top: auto;
+                transform: translate(-0,27px);
+                @media only screen and (max-width: 1350px) and (orientation: portrait),
+                screen and (max-width: 1080px) {
+                    font-size: 10px;
+                    line-height: 1.1;
+                    max-width: 309px;
+                    padding: 48px 88px;
+                    transform: translate(-59px,-53px);
+                }
                 &:before {
                     transform: rotate(-82deg);
                     top: 0;
@@ -902,7 +912,7 @@
     width: 60%;
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
-   
+        width: 100%;
     }
     @media screen and (max-width: 749px){
         width: 100%;
@@ -922,7 +932,13 @@
         display: block;
         line-height: 1.3;
         margin-bottom: 23px;
-        font-weight: 400;
+        // font-weight: 400;
+        
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            min-height: auto;
+            margin-bottom: 17px;
+        }
     }
     p {
 
@@ -931,10 +947,32 @@
         letter-spacing: 1px;
         font-size: 18px;
         max-width: 626px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            font-size: 13px;
+            line-height: 19px;
+            margin-bottom: 28px;
+            max-width: 496px;
+        }
         @media screen and (max-width: 749px){
             margin-left: 0;
             font-size: 16px;
         }
+    }
+    .form-line {
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            margin-left: 44px;
+        }
+        
+    }
+    .form-line-btn {
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            margin-top: 20px;
+            margin-left: 44px;
+        }
+        
     }
     .phone-mask {
         max-width: 320px;
@@ -945,6 +983,14 @@
 }
 .quiz__right {
     display: flex;
+    
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
 .quiz__last-info {
     .advantages__item {
@@ -994,9 +1040,18 @@
             max-width: 350px;
             width: 100%;
             padding: 35px 32px;
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                padding: 22px 21px;
+                max-width: 270px;
+            }
         }
         .btn {
             min-width: 350px;
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                min-width: 270px;
+            }
             @media screen and (max-width: 749px){
                 min-width: 100%;
             }

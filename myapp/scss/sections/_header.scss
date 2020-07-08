@@ -47,6 +47,9 @@ header {
             margin-bottom: 33px;
         }
         @media screen and (max-width: 749px){
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
         }
         @media screen and (max-height: 850px) and  (min-width: 1081px) {
 
@@ -83,8 +86,9 @@ header {
             margin-right: 0;
             order: 1;
         }
-        @media screen and (max-height: 850px) and  (min-width: 1081px) {
-
+        @media screen and (max-width: 749px){
+            order: -1;
+            margin-bottom: 20px;
         }
     }
     &__btn {
@@ -119,7 +123,9 @@ header {
         padding-top: 14px;
     }
     @media screen and (max-width: 749px){
-
+        padding-top: 0;
+        flex-grow: 1;
+        text-align: center;
     }
     &:hover {
         opacity: 0.8;

@@ -304,6 +304,10 @@
   }
   .modal__part {
     width: 50%;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      width: 68%;
+    }
   }
   &__title {
     font-family: "RobotoCondensed";
@@ -339,6 +343,11 @@
       padding: 8px 2% 8px 20px;
       position: relative;
       font-size: 22px;
+      @media only screen and (max-width: 1350px) and (orientation: portrait),
+      screen and (max-width: 1080px) {
+        padding: 3px 2% 3px 20px;
+        font-size: 16px;
+      }
       @media screen and (max-width: 749px) {
         font-size: 20px;
       }
