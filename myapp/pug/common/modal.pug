@@ -74,7 +74,7 @@
                         input(type='hidden', name='admin_email', value='liaforweb@gmail.com, Azbuka.digital@ya.ru')
                         input(type='hidden', name='form_subject', value='Подарок - файл с уроком')
                         // END Hidden Required Fields
-                        input(type='hidden', name='info', value='Пошаговая инструкция')
+                        input(type='hidden', name='info', value='Подарок - pdf-файл с уроком')
                         input.utm_source.hidden(type='hidden', name='utm_source')
                         input.utm_medium.hidden(type='hidden', name='utm_medium')
                         input.utm_campaign.hidden(type='hidden', name='utm_campaign')
@@ -144,13 +144,13 @@
             .modal__body-pic
             .modal__title Поддержка клиентов
             .modal__subtitle Оставьте заявку <br> и наш менеджер свяжется с вами 
-            form(name="podderjka")
+            form(name="popup")
                 // Hidden Required Fields
-                input(type='hidden', name='project_name', value='Azbuka digital')
-                input(type='hidden', name='admin_email', value='Nn-diamond@ya.ru, Info@azbuka.digital')
-                input(type='hidden', name='form_subject', value='Поддержка клиентов')
+                input(type='hidden', name='project_name', value='Динамика')
+                input(type='hidden', name='admin_email', value='liaforweb@gmail.com, Azbuka.digital@ya.ru')
+                input(type='hidden', name='form_subject', value='Перезвонить клиенту')
                 // END Hidden Required Fields
-                input(type='hidden', name='info', value='Поддержка клиентов')
+                input(type='hidden', name='info', value='Перезвонить клиенту')
                 input.utm_source.hidden(type='hidden', name='utm_source')
                 input.utm_medium.hidden(type='hidden', name='utm_medium')
                 input.utm_campaign.hidden(type='hidden', name='utm_campaign')
@@ -164,7 +164,7 @@
                         label
                             input(type="text" placeholder="Введите ваш телефон" name="phone").rfield.phone-mask
                     .form-line-btn
-                        .btn.btn-finish(data-modal="#modalFinish").si-button-pulse
+                        .btn.btn-finish(data-modal="#modalFinishPdf").si-button-pulse
                             .blick
                                 input(type="submit" value="Оставить заявку").quiz__btn 
                 .agree

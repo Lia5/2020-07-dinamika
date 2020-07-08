@@ -73,6 +73,7 @@ body {
 	// padding-right: 17px;
 }
 .main {
+	position: relative;
 	width: 100%;
 	height: 100%;
 	flex-grow: 1;
@@ -80,10 +81,12 @@ body {
 	flex-direction: column;
 	background: url('../img/bg-main.png') no-repeat;
 	background-position: center;
-	background-size: 100% 100%;
+	background-size: cover;
 	z-index: 1;
-	@media only screen and (max-width: 1600px) {
-		background-size: 1670px 100%;
+	@media screen and (max-width: 749px){
+		&:before {
+
+		}
 	}
 	@media only screen and (max-width: 1350px) and (orientation: portrait),
 	screen and (max-width: 1080px) {
@@ -315,6 +318,7 @@ ul,li {
 		background: linear-gradient(to right,#d8d8d8,#f3f3f3);
 		box-shadow: none;
 		font-weight: 700;
+		text-align: center;
 		@media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
 
@@ -324,53 +328,13 @@ ul,li {
 			padding: 15px 23px;
 			display: flex;
 			align-items: center;
+			justify-content: center;
 		}
-		span {
-			position: relative;
-			padding: 0 45px;
-			color: #323232;
-			@media screen and (max-width: 749px){
-				height: 9px;
-				padding: 0 0 0 40px;
-			}
-		}
-		span:after {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 40px;
-			height: 100%;
-			background: url('../img/icons/right-arrow.svg') no-repeat;
-			background-size: 25px 16px;
-			background-position: center;
-			transform: rotate(180deg);
-		}
-	}
-}
-.tooltip {
-	position: relative;
-	&__body-wrap {
-		display: none;
-		padding-left: 20px;
-		position: absolute;
-		top: 0;
-		z-index: 1;
-	}
-	&.active{
-		.tooltip__body-wrap {
-			display: block;
-		}
-	}
-	&:hover {
-		@media only screen and (min-width: 1350px) {
-			.tooltip__body-wrap {
-				display: block;
-			}
 
-		}
+		color: #323232;
 	}
 }
+
 .text404 {
 	text-align: center;
 	font-size: 100px;

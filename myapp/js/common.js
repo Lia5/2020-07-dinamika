@@ -341,7 +341,7 @@ $(function() {
                         }
                         $.ajax({
                             type: "POST",
-                            url: "../mail.php", //Change
+                            url: "../dinamika/mail.php", //Change
                             data: form.serialize()
                         }).done(function() {
                             var numModal = form.find('.btn-finish').attr('data-modal');
@@ -363,25 +363,12 @@ $(function() {
                                 // form.trigger("reset");
                             }, 1000);
                         });
-                        console.log('123333');
-                        var numModal = form.find('.btn-finish').attr('data-modal');
-                        var modal =  $(numModal);
-                        var modalWrap = $('.modal__wrap');
-                        // modalWrap.removeClass('fadeOutUp');
-                        // modalWrap.addClass('fadeInDown');
-                        modalWrap.removeClass('animated zoomOut');
-                        modalWrap.addClass('animated zoomIn');
-                        $('.modal').addClass('disabled');
-                        modal.removeClass('disabled');
-                        modal.addClass('flex');
-                        if(form.attr("name") == "popup"){
-                            $('body').addClass('body-modal-open');  
-                        }
+                        
                         
 
                         $.ajax({
                             method: "POST",
-                            url: "../telegram.php", //Change
+                            url: "../dinamika/telegram.php", //Change
                             data: form.serialize()
                         }).done(function(){});
                     } else {

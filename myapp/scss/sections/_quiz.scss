@@ -201,9 +201,6 @@
                 screen and (max-width: 1080px) {
                     margin-top: 42px;
                 }
-                @media screen and (max-width: 749px){
-                    display: none;
-                }
             }
         }
 
@@ -227,6 +224,7 @@
             width: 100%;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 33px;
         }
         &--text {
             @media screen and (max-width: 749px){
@@ -280,29 +278,37 @@
                 content: "";
                 pointer-events: none;
                 position: absolute;
-                bottom: 0;
-                right: -19vw;
-                width: 376px;
-                height: 391px;
+                bottom: 87px;
+                right: -12vw;
+                width: 275px;
+                height: 190px;
                 background: url('../img/calendar.png') no-repeat;
-                transform: rotate(-59deg);
+                background-size: contain;
+            }
+            .quiz__ans {
+
+                padding-bottom: 150px;
             }
         }
-        @media screen and (max-width: 493px){
-            &:before {
-                right: auto;
-                left: 51vw;
-            }
-        }
-        @media screen and (max-width: 379px){
-            &:before {
-                right: auto;
-                left: 61vw;
-            }
-        }
+        // @media screen and (max-width: 493px){
+        //     &:before {
+        //         right: auto;
+        //         left: 51vw;
+        //     }
+        // }
+        // @media screen and (max-width: 379px){
+        //     &:before {
+        //         right: auto;
+        //         left: 61vw;
+        //     }
+        // }
         .pick-item {
             width: 48%;
             margin-right: 2%;
+            @media screen and (max-width: 749px){
+                width: 100%;
+                margin-right: 0%;
+            }
         }
     }
     &-progress {
@@ -373,6 +379,9 @@
             transition: 0.7s all;
             position: relative;
             border-radius: 10px;
+            @media screen and (max-width: 749px){
+                height: 13px;
+            }
 
             &.active {
                 background: #f3dc42;
@@ -428,7 +437,7 @@
             padding-bottom: 0;
         }
         @media screen and (max-width: 749px){
-            padding-top: 73px;
+            padding-top: 20px;
             background: none;
         }
         &--active {
@@ -459,7 +468,9 @@
                 min-height: 73px;
             }
             @media screen and (max-width: 749px){
+                font-size: 19px;
                 line-height: 1.3;
+                min-height: auto;
                 margin-bottom: 23px;
             }
             span {
@@ -496,18 +507,17 @@
             
                 }
                 @media screen and (max-width: 749px){
-                    height: 150px;
+                    min-height: 150px;
                     border-radius: 10px;
                     display: flex;
                 }
-                @media screen and (max-width: 480px){
-                    height: 87px;
-                }
+                
                 img {
                     transition: 0.3s;
                     max-width: 100%;
                     @media screen and (max-width: 749px){
                         align-self: center;
+                        width: 100%;
                     }
                 }
             }
@@ -519,20 +529,23 @@
         
                 }
                 @media screen and (max-width: 749px){
-                    width: 32%;
+                    width: 49%;
                 }
                 &__label {
                     padding-left: 17px;
                     @media screen and (max-width: 749px){
-                        min-height: 53px;
-                        margin-top: 22px;
-                        margin-bottom: -20px;
-                        padding-left: 0;
-                        padding-right: 0;
+                        font-size: 14px;
+                        font-weight: 300;
+                        min-height: 83px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        padding-left: 3px;
+                        padding-right: 3px;
                         text-align: center;
                         justify-content: center;
                         align-items: flex-start;
                         transform: translateY(7px);
+                        border: 1px solid transparent;
                     }
                     &:before, &:after {
                         content: none;
@@ -543,6 +556,9 @@
                         transform: scale(1.10);
                         border-radius: 10px;
                         box-shadow: 0 0 10px #719ECE;
+                    }
+                    &[type="radio"]:checked + .label-img + .pick-item__label {
+                        border: 1px solid green;
                     }
                 }
             }
@@ -642,6 +658,9 @@
             screen and (max-width: 1080px) {
                 background-image: url('../img/bg-main-750.jpg');
             }
+            @media screen and (max-width: 749px){
+                background: none;
+            }
 
             .step-slide__title {
                 font-family: "Montserrat";
@@ -665,6 +684,9 @@
                     padding: 48px 88px;
                     transform: translate(-59px,-53px);
                 }
+                @media screen and (max-width: 749px){
+                    transform: none;
+                }
                 &:before {
                     transform: rotate(-82deg);
                     top: 0;
@@ -683,6 +705,7 @@
     width: 100%;
     @media screen and (max-width: 749px){
         width: 100%;
+        margin-bottom: 20px;
     }
     // &:nth-child(2n+1):not(.pick-item--text) {
     //     margin-right: 2%;
@@ -788,6 +811,9 @@
             line-height: 16px;
             color: #606060;
         }
+        @media screen and (max-width: 749px){
+            text-align: center;
+        }
     }
 }
 
@@ -797,8 +823,9 @@
     @media screen and (max-width: 749px){
         width: 100%;
         // max-width: 250px;
-        max-width: 266;
+        max-width: 266px;
         margin: 0 auto;
+        justify-content: center;
     }
 
 }
@@ -964,6 +991,9 @@
         screen and (max-width: 1080px) {
             margin-left: 44px;
         }
+        @media screen and (max-width: 749px){
+            margin-left: 0;
+        }
         
     }
     .form-line-btn {
@@ -972,6 +1002,9 @@
             margin-top: 20px;
             margin-left: 44px;
         }
+        @media screen and (max-width: 749px){
+            margin-left: 0;
+        }
         
     }
     .phone-mask {
@@ -979,6 +1012,11 @@
     }
     .step-slide__bottom {
         position: relative;
+
+        @media screen and (max-width: 749px){
+            text-align: center;
+            justify-content: center;
+        }
     }
 }
 .quiz__right {
@@ -990,6 +1028,10 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+    @media screen and (max-width: 749px){
+        position: static;
+        width: 100%;
     }
 }
 .quiz__last-info {
@@ -1022,6 +1064,9 @@
         background: url('../img/big-ben.png') no-repeat;
         background-size: 100% 100%;
         z-index: -1;
+        @media screen and (max-width: 749px){
+            content: none;
+        }
     }
     &:after {
         content: "";
@@ -1033,6 +1078,9 @@
         background: url('../img/flag-2.png') no-repeat;
         background-size: 100% 100%;
         z-index: -1;
+        @media screen and (max-width: 749px){
+            content: none;
+        }
                                                                              
     }
     .quiz__left {
@@ -1053,7 +1101,13 @@
                 min-width: 270px;
             }
             @media screen and (max-width: 749px){
-                min-width: 100%;
+                min-width: 290px;
+            }
+        }
+        .quiz__body {
+            
+            @media screen and (max-width: 749px){
+                padding-bottom: 0;
             }
         }
     }
@@ -1070,6 +1124,9 @@
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
         width: 100%;
+    }
+    @media screen and (max-width: 749px){
+        text-align: center;
     }
 }
 .slider {

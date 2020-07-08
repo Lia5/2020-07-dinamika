@@ -78,6 +78,9 @@
         @media screen and (max-width: 749px){
             padding-right: 0;
             width: 100%;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
         }
         @media screen and (max-height: 850px) and  (min-width: 1081px) {
 
@@ -167,6 +170,11 @@
         margin-left: auto;
         max-width: 300px;
         text-align: center;
+
+        @media screen and (min-width: 2000px){
+            position: absolute;
+            right: 10vw;
+        }
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             display: none;
@@ -217,6 +225,14 @@
 
         }
     }
+    .home__bonus {
+
+        @media screen and (min-width: 2000px){
+            position: absolute;
+            bottom: 0;
+            right: 39vw;
+        }
+    }
 }
 .pdf-icon {
     display: block;
@@ -241,5 +257,7 @@
         font-size: 11px;
         margin-top: 32px;
         margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
