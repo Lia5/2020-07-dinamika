@@ -290,9 +290,10 @@ ul,li {
 	}
 	&-next {
 		display: block;
-		min-width: 205px;
-		padding: 25px 30px;
+		min-width: 261px;
+		padding: 31px 35px;
 		box-shadow: none;
+		font-size: 13px;
 		font-weight: 700;
 		@media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
@@ -310,12 +311,15 @@ ul,li {
 		}
 	}
 	&-prev {
-		display: block;
-		min-width: 205px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 178px;
 		padding: 25px 30px;
 		margin-right: 21px;
 		position: relative;
-		background: linear-gradient(to right,#d8d8d8,#f3f3f3);
+		color: #fff;
+		background: linear-gradient(to right,#b7b7b7,#d2d2d2);
 		box-shadow: none;
 		font-weight: 700;
 		text-align: center;
@@ -330,8 +334,6 @@ ul,li {
 			align-items: center;
 			justify-content: center;
 		}
-
-		color: #323232;
 	}
 }
 
@@ -471,6 +473,9 @@ ul,li {
 }
 .text--medium {
 	font-weight: 500;
+}
+.text--sb {
+	font-weight: 600;
 }
 .text--bold {
 	font-weight: 700;

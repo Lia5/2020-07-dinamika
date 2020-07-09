@@ -10,9 +10,6 @@ section#quiz.quiz
             br
             span «Как учить 10 слов в день без зубрежки»
         .quiz__mainsubtitle тест основан на результатах 1500 учениках, прошедших через нашу онлайн-школу за прошедший год
-            br.br-desktop
-            br.br-mobile
-            | в Москве и МО
         form(class="quizForm", name="quiz")
             // Hidden Required Fields
             input(type='hidden', name='project_name', value='Динамика')
@@ -25,7 +22,7 @@ section#quiz.quiz
             input.utm_campaign.hidden(type='hidden', name='utm_campaign')
             input.utm_term.hidden(type='hidden', name='utm_term')
             input.utm_content.hidden(type='hidden', name='utm_content')
-            .step-slide.step-slide--with-img.step-slide--active
+            .step-slide.step-slide--with-img.step-slide--active1
                 .quiz__wrap
                     .quiz-sidebar
                         .quiz-sidebar__pic
@@ -111,7 +108,7 @@ section#quiz.quiz
                                 .quiz__error
                                 a.btn.btn-prev.qa-prev(href='#') Назад
                                 .si-button-pulse
-                                    a.btn.btn-next.qa-next(href='#').blick Далее
+                                    a.btn.btn-next.qa-next(href='#').blick Следующий вопрос
             .step-slide.step-slide--with-img
                 .quiz__wrap
                     .quiz-sidebar
@@ -158,7 +155,7 @@ section#quiz.quiz
                                 .quiz__error
                                 a.btn.btn-prev.qa-prev(href='#') Назад
                                 .si-button-pulse
-                                    a.btn.btn-next.qa-next(href='#').blick Далее
+                                    a.btn.btn-next.qa-next(href='#').blick Следующий вопрос
             .step-slide
                 .quiz__wrap
                     .quiz-sidebar
@@ -199,7 +196,7 @@ section#quiz.quiz
                                 .quiz__error
                                 a.btn.btn-prev.qa-prev(href='#') Назад
                                 .si-button-pulse
-                                    a.btn.btn-next.qa-next(href='#').blick Далее
+                                    a.btn.btn-next.qa-next(href='#').blick Следующий вопрос
             .step-slide.step-slide--with-img
                 .quiz__wrap
                     .quiz-sidebar
@@ -246,8 +243,8 @@ section#quiz.quiz
                                 .quiz__error
                                 a.btn.btn-prev.qa-prev(href='#') Назад
                                 .si-button-pulse
-                                    a.btn.btn-next.qa-next(href='#').blick Далее
-            .step-slide.step-slide--text.step-slide--last
+                                    a.btn.btn-next.qa-next(href='#').blick Следующий вопрос
+            .step-slide.step-slide--text.step-slide--last.step-slide--active
                 .quiz__wrap
                     .quiz__left
                         .quiz__body
@@ -276,8 +273,15 @@ section#quiz.quiz
                     .quiz__right
                         .home__bonus
                             img(src="img/icons/pdf.svg" alt="pdf-icon" class="pdf-icon")
-                            p  Также вы получите pdf инструкцию, которая поможет учить 10 английских слов за день!
-                            p Для этого оставьте свои данные в форме слева и мы вышлем вам подарки.
+                            p  
+                                span.text--sb Также вы получите 
+                                br.br-desctop
+                                span.text--sb pdf инструкцию, 
+                                br.br-desctop
+                                | которая поможет учить 10 английских слов за день!
+                            p.text--sb Для этого оставьте свои данные в форме слева
+                                br.br-desctop
+                                | и мы вышлем вам подарки.
 script.
     function outputUpdate(vol) {
 
