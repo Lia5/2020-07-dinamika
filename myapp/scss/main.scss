@@ -124,16 +124,20 @@ b, strong {
 	max-width: 1350px;
 	padding: 0 90px;
 	margin: 0 auto;
+
+	@media only screen and (max-width: 1350px) and (orientation: landscape) {
+		padding: 0 15px;
+	}
 	@media only screen and (max-width: 1350px) and (orientation: portrait),
 	screen and (max-width: 1080px) {
-		// max-width: 750px;
+		max-width: 750px;
 		padding: 0 15px;
 		display: flex;
 		flex-wrap: wrap;
 	}
 	@media screen and (max-width: 749px){
 		padding: 0 14px;
-		// max-width: 320px;
+		max-width: 320px;
 
 	}
 	@media screen and (max-height: 850px) and  (min-width: 1081px) {
@@ -441,6 +445,9 @@ ul,li {
 
 //br 
 .br-desktop {
+	@media only screen and (max-width: 1350px) and (orientation: landscape) {
+		display: none;
+	}
 	@media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
 		display: none;

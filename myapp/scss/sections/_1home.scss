@@ -3,7 +3,9 @@
     margin-top: auto;
     margin-bottom: auto;
     padding: 49px 0 120px;
-
+    @media only screen and (max-width: 1350px) and (orientation: landscape) {
+        padding: 8px 0 15px;
+    }
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
         padding-bottom: 80px;
@@ -24,6 +26,9 @@
         height: 597px;
         background: url('../img/flag.png') no-repeat;
         background-size: 100% 100%;
+        @media only screen and (max-width: 1350px) and (orientation: landscape) {
+            content: none;
+        }
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             content: none;
@@ -53,6 +58,10 @@
         letter-spacing: 1px;
         margin-top: 26px;
         margin-bottom: 22px;
+
+        @media only screen and (max-width: 1350px) and (orientation: landscape) {
+
+        }
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             font-size: 18px;
@@ -118,6 +127,11 @@
         line-height: 32.77px;
         margin-left: 28px;
         margin-bottom: 60px;
+        @media only screen and (max-width: 1350px) and (orientation: landscape) {
+            font-size: 19px;
+            line-height: 27px;
+            margin-bottom: 20px;
+        }
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             max-width: 369px;
@@ -138,6 +152,7 @@
     &__btn {
         margin-left: 85px;
         display: flex;
+        
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             margin-left: 0;
@@ -174,6 +189,10 @@
         max-width: 277px;
         text-align: center;
 
+        @media only screen and (max-width: 1350px) and (orientation: landscape) {
+            margin-top: 0;
+            margin-bottom: 34px;
+        }
         @media screen and (min-width: 2000px){
             position: absolute;
             right: 10vw;
@@ -252,6 +271,10 @@
     margin: 35px 0 0 85px;
     text-transform: none;
 
+    @media only screen and (max-width: 1350px) and (orientation: landscape) {
+        padding: 0 7%;
+        margin-top: 10px;
+    }
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
         margin: 32px 0 0 ;

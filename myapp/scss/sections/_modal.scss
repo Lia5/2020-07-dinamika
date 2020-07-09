@@ -183,7 +183,7 @@
     }
     &__body {
       
-      padding: 40px 40px 38px;
+      padding: 49px 71px 38px;
       @media only screen and (max-width: 749px) {
         padding-left: 20px;
         padding-right: 20px;
@@ -192,7 +192,7 @@
     }
     &__title {
       font-weight: 500;
-      margin: 0 auto 12px;
+      margin: 0 auto 18px;
       @media only screen and (max-width: 749px) {
         font-size: 24px;
         line-height: 29px;
@@ -200,11 +200,11 @@
       }
     }
     &__subtitle {
-      
+      letter-spacing: 0.5px;
       max-width: none;
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 20px;
+      margin-bottom: 46px;
       color: #000;
       @media only screen and (max-width: 749px) {
         line-height: 25px;
@@ -276,7 +276,7 @@
 .modalLeave,
 #modalPdf {
   .modal__body {
-    padding: 5% 4% 5% 9%;
+    padding: 5% 4% 5% 9.5%;
     background: #fff url('../img/modal-pdf-bg.png') no-repeat;
     background-size: cover;
     @media screen and (max-width: 749px) {
@@ -303,7 +303,7 @@
     
   }
   .modal__part {
-    width: 50%;
+    width: 60%;
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
       width: 68%;
@@ -313,12 +313,18 @@
       width: 100%;
     }
   }
+  .quizForm {
+    &:before, &:after {
+      content: none;
+    }
+  }
   &__title {
-    font-family: "RobotoCondensed";
+    // font-family: "RobotoCondensed";
     font-size: 35px;
     line-height: 47px;
     margin-bottom: 43px;
-    max-width: 513px;
+    // max-width: 513px;
+    letter-spacing: 0.7px;
     font-weight: 600;
     @media screen and (max-width: 749px) {
       font-size: 31px;
@@ -327,14 +333,14 @@
     }
   }
   &__subtitle {
-
-    font-family: "RobotoCondensed";
+    font-weight: 500;
     color: #898989;
     font-size: 17px;
-    padding: 0 10% 3px;
+    padding: 0 7% 3px;
+    letter-spacing: 0.5px;
   }
   &__list {
-    padding: 0 3% 0 6%;
+    padding: 0 3% 0 4%;
     margin: 0 0 39px 0;
     font-size: 21px;
     line-height: 28px;
@@ -369,7 +375,7 @@
     }
   }
   .form-line {
-    padding-left: 6%;
+    padding-left: 4%;
     max-width: 370px;
     label {
       width: 100%;
@@ -537,6 +543,6 @@
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.16px;
-    margin: 20px 0px;
+    margin: 32px 0 10px;
   }
 }

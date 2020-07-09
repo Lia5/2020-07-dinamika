@@ -80,6 +80,9 @@ header {
         font-weight: 600;
         text-align: right;
         justify-content: flex-end;
+        @media only screen and (max-width: 1350px) and (orientation: landscape) {
+            margin-right: 10px;
+        }
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             margin-top: 20px;
@@ -106,6 +109,9 @@ header {
         color: #fff;
         /* background: -webkit-gradient(linear, left top, right top, from(#c3c3c3), color-stop(51%, #a7a7a7), to(#969696)); */
         // background: linear-gradient(90deg, #c3c3c3 0%, #a7a7a7 51%, #969696 100%);
+        @media only screen and (max-width: 1350px) and (orientation: landscape) {
+            padding: 22px 20px;
+        }
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             font-size: 12px;
