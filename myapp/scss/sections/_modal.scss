@@ -184,6 +184,10 @@
     &__body {
       
       padding: 49px 71px 38px;
+      @media only screen and (max-width: 1350px) and (orientation: portrait),
+      screen and (max-width: 1080px) {
+        padding: 44px 40px 38px;
+      }
       @media only screen and (max-width: 749px) {
         padding-left: 20px;
         padding-right: 20px;
@@ -193,6 +197,13 @@
     &__title {
       font-weight: 500;
       margin: 0 auto 18px;
+
+      @media only screen and (max-width: 1350px) and (orientation: portrait),
+      screen and (max-width: 1080px) {
+        font-size: 25px;
+        line-height: 33px;
+        margin-bottom: 12px;
+      }
       @media only screen and (max-width: 749px) {
         font-size: 24px;
         line-height: 29px;
@@ -206,6 +217,11 @@
       line-height: 24px;
       margin-bottom: 46px;
       color: #000;
+      @media only screen and (max-width: 1350px) and (orientation: portrait),
+      screen and (max-width: 1080px) {
+        margin-bottom: 31px;
+        font-size: 13px;
+      }
       @media only screen and (max-width: 749px) {
         line-height: 25px;
       }
@@ -279,6 +295,11 @@
     padding: 5% 4% 5% 9.5%;
     background: #fff url('../img/modal-pdf-bg.png') no-repeat;
     background-size: cover;
+
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      padding: 5% 4% 5% 7.5%;
+    }
     @media screen and (max-width: 749px) {
       background-image: url('../img/bg-320.jpg');
       background-position: bottom center;
@@ -326,6 +347,12 @@
     // max-width: 513px;
     letter-spacing: 0.7px;
     font-weight: 600;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 28px;
+    }
     @media screen and (max-width: 749px) {
       font-size: 31px;
       line-height: 37px;
@@ -338,6 +365,10 @@
     font-size: 17px;
     padding: 0 7% 3px;
     letter-spacing: 0.5px;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      font-size: 14px;
+    }
   }
   &__list {
     padding: 0 3% 0 4%;
@@ -346,6 +377,10 @@
     line-height: 28px;
     list-style: none;
     color: #323232;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      margin-bottom: 27px;
+    }
     @media screen and (max-width: 749px) {
       padding-left: 0;
     }
@@ -357,6 +392,7 @@
       screen and (max-width: 1080px) {
         padding: 3px 2% 3px 20px;
         font-size: 16px;
+        letter-spacing: 1px;
       }
       @media screen and (max-width: 749px) {
         font-size: 20px;
@@ -370,6 +406,11 @@
         height: 8px;
         border-radius: 50%;
         background: $accent;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+          top: 12px;
+          left: 4px;
+        }
 
       }
     }
@@ -377,23 +418,59 @@
   .form-line {
     padding-left: 4%;
     max-width: 370px;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      padding-left: 0;
+      max-width: 277px;
+    }
     label {
       width: 100%;
     }
     input {
       padding-left: 14px;
       padding-right: 14px;
+      @media only screen and (max-width: 1350px) and (orientation: portrait),
+      screen and (max-width: 1080px) {
+        padding: 23px 14px 23px 19px;
+        font-size: 12px;
+      }
+      &::placeholder {
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+          font-size: 12px;
+        }
+      }
     }
     .btn {
       min-width: 100%;
     }
+    .quiz__btn {
+      padding: 31px 14px;
+      @media only screen and (max-width: 1350px) and (orientation: portrait),
+      screen and (max-width: 1080px) {
+        padding: 25px 14px;
+      }
+    }
   }
   .form-line+.form-line {
     margin-top: 35px;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      margin-top: 26px;
+    }
   }
   .agree {
     max-width: 331px;
     margin-left: 7%;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      padding: 0;
+      max-width: 271px;
+      margin-left: 0;
+      margin-top: 25px;
+      font-size: 9px;
+      line-height: 1.4;
+    }
   }
 }
 .useful {
@@ -521,12 +598,16 @@
 }
 .reviews {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: -15px;
   margin-right: -15px;
 
   @media only screen and (max-width: 749px) {
-    flex-wrap: wrap;
-    justify-content: center;
+  }
+  &__item {
+    width: 33%;
+    margin-bottom: 20px;
   }
   &__video {
     padding: 0 15px;
@@ -544,5 +625,18 @@
     line-height: 24px;
     letter-spacing: 0.16px;
     margin: 32px 0 10px;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+      font-size: 13px;
+      margin: 6px 0 10px;
+    }
+  }
+  &__link {
+    img {
+      @media only screen and (max-width: 1350px) and (orientation: portrait),
+      screen and (max-width: 1080px) {
+        width: 27px;
+      }
+    }
   }
 }

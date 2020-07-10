@@ -8,8 +8,8 @@
     }
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
-        padding-bottom: 80px;
-        padding-top: 23px;
+        padding-bottom: 88px;
+        padding-top: 18px;
         overflow: hidden;
     }
     @media screen and (max-width: 749px){
@@ -213,8 +213,11 @@
         z-index: 1;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-            margin-top: auto;
+            margin: auto auto -5px;
             transform: translate(-115px,27px);
+            max-width: 266px;
+            padding: 56px 57px 66px;
+
         }
         &::before {
             position: absolute;
@@ -256,10 +259,24 @@
             right: 39vw;
         }
     }
+    .agree {
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            margin: 32px 0 0;
+            max-width: 337px;
+            line-height: 15px;
+            padding: 0;
+        }
+        
+    }
 }
 .pdf-icon {
     display: block;
     margin: 0 auto;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        margin: -3px auto 10px;
+    }
 }
 .agree {
     color: #808080;
