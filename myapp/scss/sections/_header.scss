@@ -171,8 +171,10 @@ header {
             margin-top: 5px;
         }
         @media screen and (max-width: 749px){
+            font-size: 13px;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 1px;
         }
     }
 }
@@ -191,7 +193,7 @@ header {
         position: absolute;
         width: 35px;
         height: 35px;
-        top: 14px;
+        top: 3px;
         right: -4px;
     }
     &-phone {

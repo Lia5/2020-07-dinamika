@@ -26,11 +26,21 @@
         @media only screen and (max-width: 1350px) and (orientation: landscape) {
             padding: 0 15px;
         }
+        @media screen and (max-width: 749px){
+            padding: 0 15px;
+        }
     }
     .logo {
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             margin-bottom: 28px;
+        }
+        img {
+            @media screen and (max-width: 749px){
+                width: 189px;
+                margin-right: 44px;
+            }
+            
         }
         
     }
@@ -48,6 +58,7 @@
         @media screen and (max-width: 749px){
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 22PX;
         }
     }
     &__group {
@@ -55,6 +66,9 @@
         padding-top: 7px;
 
         @media only screen and (max-width: 1350px) and (orientation: landscape) {
+            padding-right: 0;
+        }
+        @media screen and (max-width: 749px){
             padding-right: 0;
         }
     }
@@ -81,6 +95,7 @@
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 20px;
+            margin-right: 0;
         }
     }
     &__social-li {
@@ -96,6 +111,7 @@
                 width: 100%;
                 margin-bottom: 10px;
                 text-align: center;
+                margin-right: 0;
             }
         }
         &:last-child {
@@ -151,6 +167,9 @@
     p {
         margin: 0;
         line-height: 18px;
+        @media screen and (max-width: 749px){
+            display: inl;
+        }
     }
     &.br-planshet {
 
@@ -178,7 +197,7 @@
         @media screen and (max-width: 749px){
             display: block;
             order: 1;
-            margin-top: 20px;
+            margin-top: 16px;
         }
     }
 }

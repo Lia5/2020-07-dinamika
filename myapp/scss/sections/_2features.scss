@@ -4,15 +4,24 @@
     screen and (max-width: 1080px) {
         z-index: 1;
     }
+    @media screen and (max-width: 749px){
+        margin-top: -40px;
+        
+    }
     &__items {
         display: flex;
         justify-content: space-between;
         @media screen and (max-width: 749px){
             flex-wrap: wrap;
             justify-content: center;
+            overflow: hidden;
+            padding-top: 40px;
         }
     }
     &__item {
+        @media screen and (max-width: 749px){
+            max-width: 100%;
+        }
         img {
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
@@ -25,6 +34,10 @@
                 @media only screen and (max-width: 1350px) and (orientation: portrait),
                 screen and (max-width: 1080px) {
                     transform: translate(0px,-15px);
+                }
+                @media screen and (max-width: 749px){
+                    
+                    transform: translate(23px,-15px);
                 }
             }
         }
@@ -39,6 +52,15 @@
                 screen and (max-width: 1080px) {
                     transform: translate(-5px,18px);
                 }
+                @media screen and (max-width: 749px){
+                    transform: translate(-47px,4px);
+                }
+                img {
+                    @media screen and (max-width: 749px){
+                        max-width: 330px;
+                    }
+                    
+                }
             }
             .features__text {
                 margin-left: 50px;
@@ -48,6 +70,7 @@
                 }
                 @media screen and (max-width: 749px){
                     margin-left: 0;
+                    margin-top: -25px;
                 }
             }
         }
@@ -61,6 +84,13 @@
                 }
                 @media screen and (max-width: 749px){
                     margin-top: 0;
+                    transform: translate(-58px,8px);
+                }
+                img {
+                    @media screen and (max-width: 749px){
+                        max-width: 330px;
+                    }
+                    
                 }
             }
             .features__text {
@@ -68,6 +98,9 @@
                 @media only screen and (max-width: 1350px) and (orientation: portrait),
                 screen and (max-width: 1080px) {
                     margin-top: 15px;
+                }
+                @media screen and (max-width: 749px){
+                    margin-top: 4px;
                 }
             }
         }
@@ -91,12 +124,14 @@
             margin-top: -7px;
         }
         @media screen and (max-width: 749px){
+            display: block;
+            max-width: 100%;
             font-size: 19px;
             line-height: 28px;
             letter-spacing: 0;
-            margin-top: 7px;
+            margin-top: 2px;
         }
-        span {
+        .accent {
             display: block;
             font-weight: 600;
             color: #92d864;

@@ -95,7 +95,8 @@ body {
 		background-position: top center;
 	}
 	@media screen and (max-width: 749px){
-		background: none;
+		background-image: url('../img/bg-main-320.jpg');
+		background-position: bottom center;
 	}
 }
 .policy-body {
@@ -305,7 +306,7 @@ ul,li {
 		}
 		@media screen and (max-width: 749px){
 			min-width: 130px;
-			padding: 15px 23px;
+			padding: 20px 29px;
 			// font-size: 20px;
 			// padding: 16px;
 		}
@@ -333,7 +334,7 @@ ul,li {
 		}
 		@media screen and (max-width: 749px){
 			min-width: 130px;
-			padding: 15px 23px;
+			padding: 28px 11px;
 			display: flex;
 			align-items: center;
 			justify-content: center;

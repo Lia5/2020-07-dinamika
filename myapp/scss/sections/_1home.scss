@@ -13,7 +13,7 @@
         overflow: hidden;
     }
     @media screen and (max-width: 749px){
-        padding-top: 53px;
+        padding-top: 43px;
         padding-bottom: 21px;
     }
     &:before {
@@ -71,6 +71,7 @@
             margin-left: -14px;
             margin-right: -14px;
             margin-top: 0;
+            margin-bottom: 28px;
             padding: 10px 12px 10px 19px;
             text-align: center;
         }
@@ -112,8 +113,10 @@
         }
         @media screen and (max-width: 749px){
             font-size: 28px;
+            line-height: 34px;
             text-align: center;
             padding: 0 8%;
+            margin-bottom: 27px;
         }
         @media screen and (max-height: 850px) and  (min-width: 1081px) {
             // font-size: 41px;
@@ -266,6 +269,15 @@
             max-width: 337px;
             line-height: 15px;
             padding: 0;
+        }
+        @media screen and (max-width: 749px){
+            font-size: 11px;
+            line-height: 17px;
+            margin-top: 32px;
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            letter-spacing: 0.2px;
         }
         
     }

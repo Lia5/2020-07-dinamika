@@ -301,13 +301,28 @@
       padding: 5% 4% 5% 7.5%;
     }
     @media screen and (max-width: 749px) {
-      background-image: url('../img/bg-320.jpg');
-      background-position: bottom center;
-      background-size: 100% 187px;
-      padding-bottom: 190px;
+      position: relative;
+      padding-bottom: 163px;
+      background: #fff;
       border-radius: 0;
       padding-left: 15px;
       padding-right: 15px;
+      margin-bottom: 215px;
+      border-radius: 10px;
+    }
+    &:after {
+      @media screen and (max-width: 749px) {
+        content: "";
+        position: absolute;
+        bottom: -215px;
+        right: 0;
+        width: 303px;
+        height: 407px;
+        background-image: url('../img/bg-pdf-mob.png');
+        background-position: bottom center;
+        background-size: contain;
+      }
+      
     }
   }
   .modal__wrap {
@@ -354,9 +369,10 @@
       margin-bottom: 28px;
     }
     @media screen and (max-width: 749px) {
-      font-size: 31px;
-      line-height: 37px;
-      padding-left: 10px;
+      font-size: 25px;
+      line-height: 32px;
+      padding-left: 0;
+      margin-bottom: 32px;
     }
   }
   &__subtitle {
@@ -368,6 +384,9 @@
     @media only screen and (max-width: 1350px) and (orientation: portrait),
     screen and (max-width: 1080px) {
       font-size: 14px;
+    }
+    @media screen and (max-width: 749px) {
+      font-size: 17px;
     }
   }
   &__list {
@@ -383,6 +402,9 @@
     }
     @media screen and (max-width: 749px) {
       padding-left: 0;
+      margin-top: 14px;
+      margin-bottom: 29px;
+
     }
     li {
       padding: 8px 2% 8px 20px;
@@ -395,7 +417,10 @@
         letter-spacing: 1px;
       }
       @media screen and (max-width: 749px) {
-        font-size: 20px;
+        padding: 3px 1% 13px 17px;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 1px;
       }
       &:before {
         content: "";
@@ -423,6 +448,9 @@
       padding-left: 0;
       max-width: 277px;
     }
+    @media screen and (max-width: 749px) {
+      max-width: 100%;
+    }
     label {
       width: 100%;
     }
@@ -434,10 +462,17 @@
         padding: 23px 14px 23px 19px;
         font-size: 12px;
       }
+      @media screen and (max-width: 749px) {
+        padding: 26px 14px 25px 19px;
+        font-size: 20px;
+      }
       &::placeholder {
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
           font-size: 12px;
+        }
+        @media screen and (max-width: 749px) {
+          font-size: 20px;
         }
       }
     }
@@ -449,6 +484,10 @@
       @media only screen and (max-width: 1350px) and (orientation: portrait),
       screen and (max-width: 1080px) {
         padding: 25px 14px;
+      }
+      @media screen and (max-width: 749px) {
+        padding: 37px 14px;
+        font-size: 16px;
       }
     }
   }
@@ -470,6 +509,11 @@
       margin-top: 25px;
       font-size: 9px;
       line-height: 1.4;
+    }
+    @media screen and (max-width: 749px) {
+      margin-top: 29px;
+      font-size: 11px;
+      line-height: 1.5;
     }
   }
 }
@@ -608,6 +652,9 @@
   &__item {
     width: 33%;
     margin-bottom: 20px;
+    @media screen and (max-width: 749px){
+      width: 100%;
+    }
   }
   &__video {
     padding: 0 15px;
