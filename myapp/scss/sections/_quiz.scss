@@ -1142,6 +1142,7 @@
 .prev-next-container {
     position: relative;
     display: flex;
+    margin-top: 30px;
     @media screen and (max-width: 749px){
         width: 100%;
         // max-width: 250px;
@@ -1377,7 +1378,7 @@
     margin-bottom: 40px;
     &:after {
         position: absolute;
-        content: "7 лет";
+        content: "6 лет";
         bottom: -40px;
         left: 10px;
         color: #535353;

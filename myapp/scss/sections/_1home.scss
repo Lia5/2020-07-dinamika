@@ -16,24 +16,6 @@
         padding-top: 43px;
         padding-bottom: 21px;
     }
-    &:before {
-        pointer-events: none;
-        content: "";
-        position: absolute;
-        bottom: -135px;
-        left: -295px;
-        width: 668px;
-        height: 597px;
-        background: url('../img/flag.png') no-repeat;
-        background-size: 100% 100%;
-        @media only screen and (max-width: 1350px) and (orientation: landscape) {
-            content: none;
-        }
-        @media only screen and (max-width: 1350px) and (orientation: portrait),
-        screen and (max-width: 1080px) {
-            content: none;
-        }
-    }
     .wrap {
         display: flex;
         justify-content: space-between;
@@ -43,6 +25,25 @@
         }
         @media screen and (max-height: 850px) and  (min-width: 1081px) {
             // padding-right: 11%;
+        }
+        position: relative;
+        &:before {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            bottom: -265px;
+            left: -535px;
+            width: 668px;
+            height: 597px;
+            background: url('../img/flag.png') no-repeat;
+            background-size: 100% 100%;
+            @media only screen and (max-width: 1350px) and (orientation: landscape) {
+                content:1 none;
+            }
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                content: none;
+            }
         }
     }
     &__pre {
