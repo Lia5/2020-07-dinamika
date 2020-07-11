@@ -109,22 +109,23 @@ $(function() {
         }
     }
 
+  
     //animation
     setTimeout(function(){  
             
-        var introLetter = $(".promo-home__title").find('.animated');
+        var introLetter = $(".home__title").find('.animated');
         introLetter.each(function(i,t) {
             var $this = $(t);
             setTimeout(function(){ $this.addClass('fadeIn'); },i*20);
         });
         
-        var introLetter = $(".animated-parent").find('.animated');
-        introLetter.each(function(i,t) {
-            var $this = $(t);
-            setTimeout(function(){ $this.addClass('fadeIn'); },i*20);
-        });
+        // var introLetter = $(".animated-parent").find('.animated');
+        // introLetter.each(function(i,t) {
+        //     var $this = $(t);
+        //     setTimeout(function(){ $this.addClass('fadeIn'); },i*20);
+        // });
 
-        var IntroLinks = $(".promo-home__links").find('.animated');
+        var IntroLinks = $(".home__subtitle").find('.animated');
         IntroLinks.each(function(i,t) {
             var $this = $(t);
             setTimeout(function(){ $this.addClass('fadeInUp'); },i*200);
@@ -165,6 +166,8 @@ $(function() {
                 $(this).closest('.prev-next-container').find('.quiz__error').text('Выберите возраст');
             } else if ($(this).closest('.step-slide').hasClass('step-slide--range') && !$(this).closest('.step-slide').find('#volumeAge').val() == '' ) {
                 $(this).closest('.step-slide').removeClass('step-slide--active').next().addClass('step-slide--active');
+                $(this).closest('.step-slide').next().find('.quiz__body').addClass('zoomIn');
+                $(this).closest('.prev-next-container').find('.quiz__error').text('');
             } else if ($(this).closest('.step-slide').hasClass('step-slide--text') && $(this).closest('.step-slide').find('input').val() == '' ) {
                 $(this).closest('.prev-next-container').find('.quiz__error').text('Введите ответ');
             } else if ( $(this).closest('.step-slide').find('.quiz__ans--other-text.active input').val() == '') {
@@ -173,9 +176,13 @@ $(function() {
             
             } else if ($(this).closest('.step-slide').hasClass('step-slide--text') && $(this).closest('.step-slide').find('input').val() != '' ) {
                 $(this).closest('.step-slide').removeClass('step-slide--active').next().addClass('step-slide--active');
+                $(this).closest('.step-slide').next().find('.quiz__body').addClass('zoomIn');
+                $(this).closest('.prev-next-container').find('.quiz__error').text('');
             } else {
                 if($(this).closest('.step-slide').find('input:checked').length) {
                     $(this).closest('.step-slide').removeClass('step-slide--active').next().addClass('step-slide--active');
+                    $(this).closest('.step-slide').next().find('.quiz__body').addClass('zoomIn');
+                    $(this).closest('.prev-next-container').find('.quiz__error').text('');
                     
                 } else {
                     $(this).closest('.prev-next-container').find('.quiz__error').text('Выберите вариант ответа!');

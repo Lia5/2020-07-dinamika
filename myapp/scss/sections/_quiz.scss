@@ -673,12 +673,12 @@
         }
         &:nth-of-type(3) {
             .prev-next-container {
-                margin-top: 20px;
+                margin-top: 45px;
             }
         }
         &:nth-of-type(5) {
             .prev-next-container {
-                margin-top: 20px;
+                margin-top: 45px;
             }
         }
         &--thank {
@@ -1142,7 +1142,7 @@
 .prev-next-container {
     position: relative;
     display: flex;
-    margin-top: 30px;
+    margin-top: 45px;
     @media screen and (max-width: 749px){
         width: 100%;
         // max-width: 250px;

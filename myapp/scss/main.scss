@@ -488,6 +488,19 @@ ul,li {
 .text--bold {
 	font-weight: 700;
 }
+.letters.active {
+    opacity: 1;
+}
+
+.letters {
+    opacity: 0;
+}
+.home .animated {
+    opacity: 0;
+}
+// .animated.fadeInUp {
+//     opacity: 1;
+// }
 
 @import "sections/preloader";
 @import "sections/header";
