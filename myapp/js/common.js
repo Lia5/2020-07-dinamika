@@ -1,11 +1,4 @@
 $(function() {
-    // $('.js-preloader').preloadinator({
-    //     minTime: 2000,
-    //     afterRemovePreloader: function() {
-    //         $(this).remove();
-    //         $('body').removeClass('body-modal-open');
-    //     }
-    // });
     //menu
     if(jQuery('.menu-toggle').length) {
         var menu = $('.menu-toggle');
@@ -59,36 +52,6 @@ $(function() {
         });
     }
 
-    // if( window.innerWidth < 1081 || window.screen.width < 1081){
-    //     $('.advantages').slick({
-    //         infinite: true,
-    //         slidesToShow: 3,
-    //         slidesToScroll: 2,
-    //         variableWidth: true,
-    //         arrows: false,
-    //         dots: false,
-    //         responsive: [
-    //             {
-    //               breakpoint: 1082,
-    //               settings: {
-    //                 slidesToShow: 3,
-    //                 slidesToScroll: 2,
-    //                 arrows: false,
-    //                 centerPadding: '40px',
-    //                 slidesToShow: 1
-    //               }
-    //             },
-    //             {
-    //               breakpoint: 480,
-    //               settings: {
-    //                 arrows: false,
-    //                 slidesToShow: 1
-    //               }
-    //             }
-    //           ]
-    //       });
-    // }
-
 
     //animation-text
     if(jQuery('.letters').length) {
@@ -98,9 +61,6 @@ $(function() {
             return this.each(function(){
                 var $this = $(this);
                 $this.html(string.replace(/./g, '<span class="animated">$&</span>'));
-                // $this.find('span.new').each(function(i, el){
-                // setTimeout(function(){ $(el).addClass('fadeIn'); }, 40 * i);
-                // });
             });
         };
         var letters = $('.letters');
@@ -118,12 +78,6 @@ $(function() {
             var $this = $(t);
             setTimeout(function(){ $this.addClass('fadeIn'); },i*20);
         });
-        
-        // var introLetter = $(".animated-parent").find('.animated');
-        // introLetter.each(function(i,t) {
-        //     var $this = $(t);
-        //     setTimeout(function(){ $this.addClass('fadeIn'); },i*20);
-        // });
 
         var IntroLinks = $(".home__subtitle").find('.animated');
         IntroLinks.each(function(i,t) {

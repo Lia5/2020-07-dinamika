@@ -83,11 +83,6 @@ body {
 	background-position: center;
 	background-size: cover;
 	z-index: 1;
-	@media screen and (max-width: 749px){
-		&:before {
-
-		}
-	}
 	@media only screen and (max-width: 1350px) and (orientation: portrait),
 	screen and (max-width: 1080px) {
 		background-size: cover;
@@ -97,6 +92,7 @@ body {
 	@media screen and (max-width: 749px){
 		background-image: url('../img/bg-main-320.jpg');
 		background-position: bottom center;
+		z-index: 2;
 	}
 }
 .policy-body {
