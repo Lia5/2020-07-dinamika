@@ -577,19 +577,24 @@
             
                 }
                 @media screen and (max-width: 749px){
-                    min-height: 150px;
+                    overflow: hidden;
+                    height: 90px;
+                    min-height: auto;
                     border-radius: 10px;
                     display: flex;
+                    width: 20%;
+                    min-width: 90px;
+                    padding-bottom: 0;
                 }
                 @media screen and (max-width: 380px){
-                    min-height: 140px;
-                    height: 140px;
+
                 }
                 
                 img {
                     transition: 0.3s;
                     max-width: 100%;
                     width: 100%;
+
                     @media screen and (max-width: 749px){
                         align-self: center;
                         width: 100%;
@@ -605,32 +610,35 @@
         
                 }
                 @media screen and (max-width: 749px){
-                    width: 49%;
+                    width: 100%;
+                    display: flex;
                     margin-left: auto;
                     margin-right: auto;
                 }
                 &__label {
                     font-family: "Montserrat";
                     font-weight: 300;
-                    padding: 6px 3px 10px 8px;
+                    padding: 6px 3px 10px 30px;
                     color: #1b1b1b;
                     background-color: transparent;
+                    justify-content: flex-start;
+                    text-align: left;
+                    font-size: 15px;
                     @media screen and (max-width: 749px){
                         font-size: 14px;
                         font-weight: 300;
                         min-height: 83px;
                         margin-top: 0;
                         margin-bottom: 0;
-                        padding-left: 3px;
                         padding-right: 3px;
-                        text-align: center;
-                        justify-content: center;
-                        align-items: flex-start;
+                        align-items: center;
                         transform: translateY(7px);
                         border: 1px solid transparent;
                     }
                     &:before, &:after {
-                        content: none;
+                        @media screen and (max-width: 749px){
+                            content: none;
+                        }
                     }
                 }
                 &__input {
@@ -639,8 +647,18 @@
                         border-radius: 10px;
                         box-shadow: 0 0 10px #719ECE;
                     }
-                    &[type="radio"]:checked + .label-img + .pick-item__label {
-                        border: 1px solid green;
+                    &[type="radio"]:checked + .label-img {
+                        @media screen and (max-width: 749px){
+                            overflow: hidden;
+                            border: 2px solid #719ECE;
+                        }
+                    }
+                    &[type="radio"]:checked + .label-img + .pick-item__label:before {
+                        background: #a8e281;
+                        box-shadow: 0 0 3px rgba(168, 226, 129,.3);
+                    }
+                    &[type="radio"]:checked + .label-img + .pick-item__label:after {
+                        left: 14px
                     }
                 }
             }
@@ -1041,21 +1059,26 @@
         padding: 15px;
         font-size: 22px;
         margin-right: 10px;
-        &[type="radio"]:checked + .pick-item__label:before,
-        &[type="checkbox"]:checked + .pick-item__label:before {
-            
+        &[type="radio"]:checked +  .label-img + .pick-item__label:before,
+        &[type="checkbox"]:checked + .label-img + .pick-item__label:before {
+            background: #a8e281;
+            box-shadow: 0 0 3px rgba(168, 226, 129,.3);
         }
-        &[type="radio"]:checked + .pick-item__label:after {
+        &[type="radio"]:checked + .pick-item__label:after,
+        &[type="radio"]:checked + .label-img + .pick-item__label:after {
             content: "";
             display: block;
-            width: 10px;
-            height: 10px;
-            left: 12px;
-            background-color: #a8e281;
             position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
-            border-radius: 50%;
+            width: 9px;
+            height: 5px;
+            top: 48%;
+            left: 22px;
+            border: 2px solid #fff;
+            border-top: none;
+            border-right: none;
+            background: 0 0;
+            transform: rotate(-45deg) translate(0,-50%);
+            border-radius: 0;
             @media only screen and (max-width: 1350px) and (orientation: portrait),
             screen and (max-width: 1080px) {
   

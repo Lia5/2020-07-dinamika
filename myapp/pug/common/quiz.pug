@@ -1,4 +1,4 @@
-section#quiz.quiz
+section.quiz
     .wrap
         .quiz__maintitle 
             span Ответьте на 5 простых вопросов теста 
@@ -16,10 +16,10 @@ section#quiz.quiz
             | прошедших через нашу онлайн-школу 
             br.br-mobile
             | за прошедший год
-        form(class="quizForm", name="quiz")
+        form(class="quizForm", name="quiz", id="quiz")
             // Hidden Required Fields
             input(type='hidden', name='project_name', value='Динамика')
-            input(type='hidden', name='admin_email', value='liaforweb@gmail.com, Azbuka.digital@ya.ru, dinamika.ekb@gmail.com')
+            input(type='hidden', name='admin_email', value='Azbuka.digital@ya.ru, dinamika.ekb@gmail.com')
             input(type='hidden', name='form_subject', value='Квиз')
             // END Hidden Required Fields
             input(type='hidden', name='info', value='Квиз')
