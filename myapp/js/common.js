@@ -330,7 +330,7 @@ $(function() {
                             if(form.attr("name") == "popup" || form.attr("name") == "callback" ){
                                 $('body').addClass('body-modal-open');  
                             }
-                            
+                            form.find('.btn-finish').addClass('op');
                             setTimeout(function() {
                                 // Done Functions
                                 // form.trigger("reset");
